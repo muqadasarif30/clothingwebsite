@@ -1,0 +1,19 @@
+const pushBotScript = document.createElement("script");
+
+const sdkURL = `${window.location.origin}/apps/push-bot/pushbot-sdk-v2.js?subdomain=${Shopify.shop}&platform=shopify`;
+
+pushBotScript.src = sdkURL;
+pushBotScript.async = true; // ✅ Better than setAttribute
+pushBotScript.crossOrigin = "anonymous";
+pushBotScript.onload = function () {
+  console.log("[PUSHBOT] Loaded successfully");
+};
+
+pushBotScript.onerror = function (error) {
+  console.error("[PUSHBOT] Loading failed:", error);
+};
+
+// ✅ Check if already loaded
+if (!document.querySelector('script[src*="pushbot-sdk-v2.js"]')) {
+  document.head.appendChild(pushBotScript);
+}

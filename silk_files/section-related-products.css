@@ -1,0 +1,8 @@
+.related-products {
+  display: block;
+}
+
+.related-products__heading {
+  margin: 2rem 0;
+  font-size: 24px;
+}

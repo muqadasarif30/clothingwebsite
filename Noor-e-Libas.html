@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Noor-e-Libas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  i {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+  }
+  i:hover {
+    color: blue;
+  }
+  
+</style>
+</head>
+
+<body>
+     <!-- Top Bar -->
+<div class="top-bar">
+
+  <!-- LEFT SIDE -->
+  <div class="left-icons">
+    <i style="color:aliceblue" class="fa-solid fa-phone"></i>
+    <i class="fa-brands fa-whatsapp"></i>
+  </div>
+  <!-- CENTER TEXT -->
+  <marquee style="font-size: 15px;"> Free delivery for orders above Rs 4999 within Pakistan. </marquee>
+
+  <!-- RIGHT SIDE -->
+  <div class="right-icons">
+    <i class="fa-solid fa-magnifying-glass" onclick="toggleSearch()"></i>
+    <a href="cart.html">
+     <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+    <a href="form.html">
+      <i class="fa-solid fa-user"></i>
+    </a>
+  </div>
+
+</div>
+<div id="searchBox" class="search-box">
+    <input type="text" placeholder="Search products...">
+</div>
+<div class="logo-navbar">
+    <img src="WhatsApp Image 2026-04-18 at 1.51.18 AM.jpeg" alt="Noor-e-Libas">
+    <!--  POPUP START -->
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <div class="popup-left">
+     <div class="logo-circle">
+  <img src="WhatsApp Image 2026-04-18 at 1.51.18 AM.jpeg" alt="logo">
+</div>
+    </div>
+
+    <div class="popup-text">
+      <h4>Never miss an Update 🛍️</h4><br>
+      <p>Subscribe to get updates on our new products and exclusive promotions</p>
+      <div class="buttons">
+        <button class="later" onclick="closePopup()">Later</button>
+        <button class="allow">Allow</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+ <header>
+
+<div class="menu-bar">
+
+    <!-- LEFT: MENU ICON -->
+    <div class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+    </div>   
+    <ul>
+        <li class="women-menu">Women
+
+            <!-- DROPDOWN -->
+            <div class="dropdown">
+
+                <!-- CATEGORIES -->
+                <div class="dropdown-content">
+
+                    <div class="column">
+                        <h3>READY TO WEAR</h3>
+                        <p>Embroidered</p>
+                        <p>Printed</p>
+                        <p>Solids</p>
+                    </div>
+
+                    <div class="column">
+                        <h3>UNSTITCHED</h3>
+                        <p>Embroidered</p>
+                        <p>Printed</p>
+                        <p>Lawn</p>
+                    </div>
+
+                    <div class="column">
+                        <h3>CO-ORD SET</h3>
+                        <p>Printed</p>
+                        <p>Embroidered</p>
+                        <p>Solids</p>
+                    </div>
+                    <div class="column">
+                        <h3>FRAGRANCE</h3>
+                        <p>Perfumes</p>
+                        <p>Body Mist</p>
+                    </div>
+                    <!-- SIDE IMAGE -->
+                    <div class="dropdown-image">
+                        <img src="Women.webp" alt="">
+                    </div>
+              </div>
+            </div>
+        </li>
+    </ul>
+</div>    
+    </li>
+    <li>Girls </li>
+
+     <li>Men
+    <div class="dropdown2">
+        <div class="dropdown-content">
+            <div class="column">
+                <h3>SUITS</h3>
+                <p>Wash & Wear</p>
+                <p>Blended</p>
+                <p>Cotton</p>
+            </div>
+
+            <div class="column">
+                <h3>BOTTOMS</h3>
+                <p>Trousers</p>
+                <p>Jeans</p>
+            </div>
+
+            <div class="column">
+                <h3>FRAGRANCES</h3>
+                <p>Perfumes</p>
+                <p>Body Spray</p>
+            </div>
+
+            <div class="dropdown-image">
+                <img src="Men.webp" alt="">
+            </div>
+        </div>
+    </div>
+</li>
+    <li style="color: red;">Sale</li>
+        </ul>
+    
+</header>
+<div class="slider">
+  <div class="slides">
+
+    <div class="slide" style="background-image: url('printed.webp');"></div>
+<div class="slide" style="background-image: url('ready to wear.webp');"></div>
+<div class="slide" style="background-image: url('co-ord set.webp');"></div>
+  </div>
+
+  <!-- Arrows -->
+  <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+  <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+  <!-- Dots -->
+  <div class="dots">
+    <span onclick="currentSlide(0)"></span>
+    <span onclick="currentSlide(1)"></span>
+    <span onclick="currentSlide(2)"></span>
+  </div>
+
+</div>  
+<h2 class="unstitched" style="font-size: 30px;">UNSTITCHED</h2>
+
+<div class="product-section">
+    <img src="3 piece 1.webp" alt="image">
+    <img src="3 piece 2.webp" alt="image">
+    <img src="3 piece 3.webp" alt="image">
+    <img src="3 piece 4.webp" alt="image">
+</div>
+<div class="shop-section">
+    <hr>
+    <h2 class="heading">SHOP BY COLLECTION</h2>
+
+    <div class="collection">
+        <div class="card">
+            <img src="signature pret.webp" alt="image">
+            <p style="font-size: 15px;">SIGNATURE (PRET)</p>
+        </div>
+
+        <div class="card">
+            <img src="silk 2 piece.webp" alt="image">
+            <p style="font-size: 15px;">SILK</p>
+        </div>
+
+        <div class="card">
+            <img src="co-ord .webp" alt="image">
+            <p style="font-size: 15px;">CO-ORDS</p>
+        </div>
+    </div>
+</div>
+<div class="fragrance-section">
+    <div class="bg"></div>
+    <h2 class="fragrance">Fragrances</h2>
+    <div class="perfume-box">
+        <img src="perfume.png" class="perfume">
+        <a href="#" class="shop-btn">Shop Now</a>
+    </div>
+</div>
+<div class="category-section">
+    <div class="category-container">
+        <div class="category-card">
+            <img src="Mens.webp" alt="">
+            <a href="#" class="category-btn">MEN</a>
+        </div>
+        <div class="category-card">
+            <img src="girls.webp" alt="">
+            <a href="#" class="category-btn">GIRLS</a>
+        </div>
+    </div>
+</div>
+
+<hr>
+<section class="new-arrivals">
+
+  <div class="arrivals-container">
+
+    <!-- LEFT TEXT -->
+    <div class="arrivals-text">
+        <a href="#">
+      <h2>NEW ARRIVALS</h2>
+      </a>
+    </div>
+
+    <!-- PRODUCTS -->
+    <div class="arrivals-products">
+
+      <!-- CARD 1 -->
+      <div class="product-card">
+        <img src="3 piece 1.webp" alt="girl dress">
+        <p>Embroidered (Pret)</p>
+        <h4>From Rs. 5,699</h4>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="product-card">
+         <img src="3 piece 2.webp" alt="girl dress">
+        <p>2 Piece Dobby Suit - Embroidered (Pret)</p>
+        <h4>From Rs. 5,699</h4>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="product-card">
+       <img src="3 piece 3.webp" alt="girl dress">
+        <p>2 Piece Cambric Suit - Embroidered (Pret)</p>
+        <h4>From Rs. 4,899</h4>
+      </div>
+      <!-- CARD 4 -->
+      <div class="product-card">
+        <img src="co-ord .webp" alt="image">
+        <p>2 Piece Cambric Suit - Embroidered (Pret)</p>
+        <h4>From Rs. 4,899</h4>
+      </div>
+      <!-- CARD 5 -->
+      <div class="product-card">
+        <img src="co-ord 7.webp" alt="girl dress">
+        <p>2 Piece Cambric Suit - Embroidered (Pret)</p>
+        <h4>From Rs. 4,899</h4>
+      </div>
+      <!-- CARD 6-->
+      <div class="product-card">
+       <img src="3 piece 6.webp" alt="girl dress">
+        <p>2 Piece Cambric Suit - Embroidered (Pret)</p>
+        <h4>From Rs. 4,899</h4>
+      </div>
+    </div>
+
+    <!-- RIGHT TEXT -->
+  <div class="view-all-card">
+    <a href="#">
+      <span>VIEW ALL 148</span>
+      <span>ARTICLES</span>
+    </a>
+  </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-top">  
+        <div class="footer-column">
+            <h3>CUSTOMER CARE</h3>
+            <p>ORDER TRACKING</p>
+            <p>POLICIES</p>
+            <p>FAQ'S</p>
+            <p>CONTACT US</p>
+        </div>
+        <div class="footer-column">
+            <h3>INFORMATION</h3>
+            <p>ABOUT US</p>
+            <p>CAREERS</p>
+            <p>STORE LOCATOR</p>
+            <p>BLOGS</p>
+        </div>
+    </div>
+    <div class="footer-middle">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026, Noor-e-Libas Powered by Shopify</p>
+    </div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+let index = 0;
+const slides = document.querySelector(".slides");
+const dots = document.querySelectorAll(".dots span");
+
+function showSlide(n){
+    const total = document.querySelectorAll(".slide").length;
+    if(n >= total) index = 0;
+    else if(n < 0) index = total - 1;
+    else index = n;
+
+    slides.style.transform = `translateX(-${index * 100}%)`;
+
+    dots.forEach(dot => dot.style.background = "white");
+    dots[index].style.background = "black";
+}
+function changeSlide(n){
+    showSlide(index + n);
+}
+function currentSlide(n){
+    showSlide(n);
+}
+setInterval(() => {
+    showSlide(index + 1);
+}, 3000);
+
+});
+</script>
+<script>
+window.addEventListener("scroll", function() {
+    let slides = document.querySelectorAll(".slide");
+    let scroll = window.pageYOffset;
+
+    slides.forEach(function(slide) {
+        slide.style.backgroundPositionY = scroll * 0.5 + "px";
+    });
+});
+</script>
+<script>
+window.addEventListener("scroll", function() {
+    let perfume = document.querySelector(".perfume");
+
+    if(perfume){
+        let rect = perfume.getBoundingClientRect();
+        let move = rect.top * -0.2;
+
+        perfume.style.transform = "translateY(" + move + "px)";
+    }
+});
+</script>
+ <script>
+function toggleSearch(){
+    let box = document.getElementById("searchBox");
+
+    if(box.style.display === "block"){
+        box.style.display = "none";
+    } else {
+        box.style.display = "block";
+    }
+}
+</script>
+<script src="style.js"></script>
+</body>
+</html>
