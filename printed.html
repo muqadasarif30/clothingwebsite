@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Silk Collection</title>
+    <title>Printed Collection</title>
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- FONT AWESOME ICONS -->
@@ -292,13 +292,13 @@
 </ul>
 </div>
 </header>
-<!-- BANNER VIDEO -->
+<!-- BANNER IMAGE -->
 <div class="video-banner">
-    <img src="Silk banner.webp">
+    <img src="printed dresses.jpg" alt="banner">
 </div>
 
 <!-- PAGE HEADING -->
-<h1>SILK PRET</h1>
+<h1>PRINTED COLLECTION</h1>
 
 <!-- PRODUCTS -->
 <div class="summer-products">
@@ -368,9 +368,11 @@ function toggleSearch() {
 document.getElementById("loadMoreBtn").onclick = function(){
 
     let hiddenImages = document.querySelectorAll(".hidden");
+
     hiddenImages.forEach(function(img){
         img.style.display = "block";
     });
+
     document.getElementById("loadMoreBtn").style.display = "none";
 }
 </script>
@@ -381,6 +383,7 @@ document.getElementById("loadMoreBtn").onclick = function(){
     hiddenImages.forEach(function(img){
         img.style.display = "block";
     });
+
     document.getElementById("loadMoreBtn").style.display = "none";
     document.getElementById("endText").style.display = "block";
 }

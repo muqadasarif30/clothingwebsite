@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Silk Collection</title>
+    <title>Embrioded Collection</title>
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- FONT AWESOME ICONS -->
@@ -34,11 +34,12 @@
 .summer-products img{
     width:100%;
 }
-.video-banner img{
+.video-banner video{
     width:100%;
-    height:auto;
+    height:500px;
+    object-fit:cover;
     display:block;
-}
+}} 
 
 .search-box input{
     width: 700px;
@@ -294,11 +295,13 @@
 </header>
 <!-- BANNER VIDEO -->
 <div class="video-banner">
-    <img src="Silk banner.webp">
+    <video autoplay muted loop playsinline>
+        <source src="Embrioded banner.mp4" type="video/mp4">
+    </video>
 </div>
 
 <!-- PAGE HEADING -->
-<h1>SILK PRET</h1>
+<h1>EMBROIDED COLLECTION</h1>
 
 <!-- PRODUCTS -->
 <div class="summer-products">
@@ -368,9 +371,11 @@ function toggleSearch() {
 document.getElementById("loadMoreBtn").onclick = function(){
 
     let hiddenImages = document.querySelectorAll(".hidden");
+
     hiddenImages.forEach(function(img){
         img.style.display = "block";
     });
+
     document.getElementById("loadMoreBtn").style.display = "none";
 }
 </script>
@@ -381,6 +386,7 @@ document.getElementById("loadMoreBtn").onclick = function(){
     hiddenImages.forEach(function(img){
         img.style.display = "block";
     });
+
     document.getElementById("loadMoreBtn").style.display = "none";
     document.getElementById("endText").style.display = "block";
 }

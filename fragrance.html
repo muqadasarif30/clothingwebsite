@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Silk Collection</title>
+    <title>Fragrances</title>
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- FONT AWESOME ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-     <style>
+    <style>
         body{
             margin:0;
             padding:0;
@@ -24,21 +24,6 @@
     text-align: center;
     padding: 20px;
 }
-.summer-products{
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:20px;
-    padding:40px;
-}
-
-.summer-products img{
-    width:100%;
-}
-.video-banner img{
-    width:100%;
-    height:auto;
-    display:block;
-}
 
 .search-box input{
     width: 700px;
@@ -46,6 +31,10 @@
     font-size: 18px;
     border: 1px solid #ccc;
     outline: none;
+}
+.right-icons i,
+.left-icons i{
+    font-size:28px;
 }
 .hidden{
     display:none;
@@ -119,21 +108,87 @@
 .fa-youtube {
     color: #FF0000;
 }
-#endText{
-    text-align:center;
-    font-size:20px;
-    margin-bottom:40px;
-    display:none;
+/* VIDEO SECTION */
+.video-section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    /* BACKGROUND IMAGE */
+    background-image: url("perfume background2.jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat:repeat;
+    background-attachment: fixed;
+    padding: 50px 20px;
 }
-.right-icons i,
-.left-icons i{
-    font-size:28px;
+
+/* DARK OVERLAY */
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
 }
+
+/* CONTENT */
+.content{
+    position: relative;
+    z-index: 1;
+}
+
+/* VIDEO BOX */
+.video-banner{
+    width: 85%;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.6);
+    border: 4px solid white;
+}
+
+/* VIDEO */
+.video-banner video{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* HEADING */
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 50px;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 10px black;
+}
+
+/* PERFUME IMAGES CONTAINER */
+.perfume-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+/* PERFUME IMAGES */
+.perfume-images img{
+    width: 80%;
+    max-width: 1400px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
     </style>
 
 </head>
 
 <body>
+
 <!-- TOP BAR -->
 <div class="top-bar">
 
@@ -292,37 +347,36 @@
 </ul>
 </div>
 </header>
-<!-- BANNER VIDEO -->
-<div class="video-banner">
-    <img src="Silk banner.webp">
+<!-- VIDEO SECTION -->
+<div class="video-section">
+
+    <!-- OVERLAY -->
+    <div class="overlay"></div>
+
+    <!-- MAIN CONTENT -->
+    <div class="content">
+
+        <!-- VIDEO -->
+        <div class="video-banner">
+            <video autoplay muted loop controls playsinline>
+                <source src="perfume launch.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- HEADING -->
+        <h1>PERFUMES COLLECTION</h1>
+
+        <!-- PERFUME IMAGES -->
+        <div class="perfume-images">
+            <img src="perfume1.jpeg" alt="">
+            <img src="perfume2.jpeg" alt="">
+        </div>
+
+    </div>
+
 </div>
 
-<!-- PAGE HEADING -->
-<h1>SILK PRET</h1>
-
-<!-- PRODUCTS -->
-<div class="summer-products">
-
-    <img src="3 piece 1.webp" alt="">
-     <img src="3 piece 7.webp" alt="">
-      <img src="3 piece 6.webp" alt="">
-     <img src="3 piece 5.webp" alt="">
-     <img src="3 piece 4.webp" alt="">
-     <img src="3 piece 3.webp" alt="">
-     <img src="3 piece 2.webp" alt="">
-     <img src="pexels-dhanno-19401517.jpg" alt="">
-     <img src="pexels-dhanno-20516287.jpg" alt="">
-     <img src="pexels-dhanno-28213800.jpg" alt="">
-     <img src="pexels-dhanno-33300904.jpg" alt="">
-     <img src="pexels-dhanno-33667895.jpg" alt="">
-      <img src="pexels-dhanno-35340667.jpg" alt="" class="hidden">
-    <img src="pexels-dhanno-36104983.jpg" alt="" class="hidden">
-     <img src="pexels-dhanno-36104988.jpg" alt="" class="hidden">
-     <img src="pexels-dhanno-36325842.jpg" alt="" class="hidden">
-     <img src="pexels-dhanno-36325957.jpg" alt="" class="hidden">
-</div>
 <button id="loadMoreBtn">Load More</button>
-<p id="endText">No More Products</p>
 <!-- Footer -->
 <footer class="footer">
     <div class="footer-top">  
@@ -368,21 +422,12 @@ function toggleSearch() {
 document.getElementById("loadMoreBtn").onclick = function(){
 
     let hiddenImages = document.querySelectorAll(".hidden");
-    hiddenImages.forEach(function(img){
-        img.style.display = "block";
-    });
-    document.getElementById("loadMoreBtn").style.display = "none";
-}
-</script>
-<script>
-document.getElementById("loadMoreBtn").onclick = function(){
 
-    let hiddenImages = document.querySelectorAll(".hidden");
     hiddenImages.forEach(function(img){
         img.style.display = "block";
     });
+
     document.getElementById("loadMoreBtn").style.display = "none";
-    document.getElementById("endText").style.display = "block";
 }
 </script>
 </body>

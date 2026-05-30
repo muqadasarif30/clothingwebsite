@@ -28,20 +28,50 @@ ul li:hover{
 }
 
 /* DROPDOWN */
-.dropdown{
+.dropdown,
+.dropdown2{
     display: none;
     position: absolute;
-    left: -420px;
+    left: 50%;
+    transform: translateX(-50%);
     top: 45px;
-    width: 1200px;
+    width: 1400px;
+    max-width: 95vw;
     background: white;
-    padding: 35px 50px;
+    padding: 40px 60px;
+    z-index: 9999;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+.sale-dropdown{
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 45px;
+    background: white;
+    padding: 40px 60px;
+    width: 500px;
     z-index: 9999;
     box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
 }
 
+/* SHOW IMAGE */
+.sale-menu:hover .sale-dropdown{
+    display: block;
+}
+
+/* IMAGE */
+.sale-dropdown img{
+    width: 380px;
+    height: 400px;
+    object-fit: cover;
+}
 /* SHOW DROPDOWN */
-ul li:hover .dropdown{
+.women-menu:hover .dropdown{
+    display: block;
+}
+
+.men-menu:hover .dropdown2{
     display: block;
 }
 
@@ -99,11 +129,6 @@ ul li:hover .dropdown{
     box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
 }
 
-/* SHOW DROPDOWN */
-ul li:hover .dropdown2{
-    display: block;
-}
-
 /* CONTENT */
 .dropdown-content{
     display: flex;
@@ -114,7 +139,7 @@ ul li:hover .dropdown2{
 /* COLUMN */
 .column h3{
     color: black;
-    font-size: 22px;
+    font-size: 25px;
     margin-bottom: 20px;
     border-bottom: 1px solid lightgray;
     padding-bottom: 10px;
@@ -271,7 +296,7 @@ ul li:hover .dropdown2{
     line-height: 0;   
 }
 .logo-navbar img{
-    height: 50px;
+    height: 60px;
     display: block;    
     margin: 0 auto;      
 }
@@ -300,6 +325,22 @@ ul li:hover .dropdown2{
 }
 .product-section img:hover{
     transform: scale(1.05);
+}
+.product{
+    text-align: center;
+}
+
+.product h3{
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.product h3 a{
+    text-decoration: none;
+    color: black;
+}
+.product h3 a:hover{
+    color: black;
 }
 
 /* HEADING */
@@ -468,8 +509,8 @@ ul li:hover .dropdown2{
 }
 
 .logo-circle {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background: black;
   border-radius: 50%;
   display: flex;
@@ -489,12 +530,13 @@ ul li:hover .dropdown2{
   flex-direction: column; 
 }
 .popup-text h4 {
+    font-size: 28px;
   margin-bottom: 5px;
   line-height: 1.5;
 }
 
 .popup-text p {
-  font-size: 16px;
+  font-size: 18px;
   color: gray;
   margin-bottom:8px;
   line-height: 1.5;
@@ -507,6 +549,8 @@ ul li:hover .dropdown2{
 .later {
   background: none;
   border: none;
+  padding: 8px 18px;
+  font-size: 16px;
   margin-right: 10px;
   cursor: pointer;
 }
@@ -515,7 +559,8 @@ ul li:hover .dropdown2{
   background: #3b82f6;
   color: white;
   border: none;
-  padding: 5px 12px;
+  padding: 8px 18px;
+  font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -656,4 +701,8 @@ ul li:hover .dropdown2{
 /* YouTube */
 .fa-youtube {
     color: #FF0000;
+}
+.card a{
+    text-decoration:none;
+    color:black;
 }
