@@ -24,15 +24,22 @@
     text-align: center;
     padding: 20px;
 }
-.summer-products{
+.printed-products{
     display:grid;
     grid-template-columns: repeat(4,1fr);
     gap:20px;
     padding:40px;
 }
+.product-card p{
+    font-size:20px;
+    margin-top:22px;
+    line-height:1.5;
+}
 
-.summer-products img{
+.product-card img{
     width:100%;
+    height:auto;
+    display:block;
 }
 .video-banner img{
     width:100%;
@@ -301,26 +308,108 @@
 <h1>PRINTED COLLECTION</h1>
 
 <!-- PRODUCTS -->
-<div class="summer-products">
+<div class="printed-products">
 
-    <img src="../images/3 piece 1.webp " alt="">
-     <img src="../images/3 piece 7.webp " alt="">
-      <img src="../images/3 piece 6.webp" alt="">
-     <img src="../images/3 piece 5.webp" alt="">
-     <img src="../images/3 piece 4.webp" alt="">
-     <img src="../images/3 piece 3.webp" alt="">
-     <img src="../images/3 piece 2.webp" alt="">
-     <img src="../images/pexels-dhanno-19401517.jpg" alt="">
-     <img src="../images/pexels-dhanno-20516287.jpg" alt="">
-     <img src="../images/pexels-dhanno-28213800.jpg" alt="">
-     <img src="../images/pexels-dhanno-33300904.jpg" alt="">
-     <img src="../images/pexels-dhanno-33667895.jpg" alt="">
-      <img src="../images/pexels-dhanno-35340667.jpg" alt="" class="hidden">
-    <img src="../images/pexels-dhanno-36104983.jpg" alt="" class="hidden">
-     <img src="../images/pexels-dhanno-36104988.jpg" alt="" class="hidden">
-     <img src="../images/pexels-dhanno-36325842.jpg" alt="" class="hidden">
-     <img src="../images/pexels-dhanno-36325957.jpg" alt="" class="hidden">
+    <div class="product-card">
+        <img src="../images/printed1.jpg" alt="">
+        <p>3 Piece Lawn Prints</p>
+        <h3>Rs. 5,999</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/printed2.jpg" alt="">
+        <p>3 Piece Lawn Prints</p>
+        <h3>Rs. 6,499</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/printed3.jpg" alt="">
+        <p>Luxury Lawn Prints</p>
+        <h3>Rs. 5,499</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/printed4.jpg" alt="">
+        <p>3 Piece Printed Lawn Suit</p>
+        <h3>Rs. 6,999</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/printed5.jpg" alt="">
+        <p>Summer Lawn Prints</p>
+        <h3>Rs. 5,799</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/printed6.jpg" alt="">
+        <p>3 Piece Lawn Prints</p>
+        <h3>Rs. 4,999</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/printed7.jpg" alt="">
+        <p>Premium Printed Lawn</p>
+        <h3>Rs. 6,299</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/printed8.jpg" alt="">
+        <p>3 Piece Lawn Collection</p>
+        <h3>Rs. 5,699</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/printed9.jpg" alt="">
+        <p>Luxury Lawn Prints</p>
+        <h3>Rs. 7,299</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/printed10.jpg" alt="">
+        <p>3 Piece Lawn Prints</p>
+        <h3>Rs. 5,999</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/printed11.jpg" alt="">
+        <p>Printed Lawn Suit</p>
+        <h3>Rs. 6,499</h3>
+    </div>
+
+    <!-- LOAD MORE PRODUCTS -->
+
+    <div class="product-card hidden">
+        <img src="../images/printed12.jpg" alt="">
+        <p>Luxury Lawn Prints</p>
+        <h3>Rs. 5,899</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/printed13.jpg" alt="">
+        <p>3 Piece Lawn Collection</p>
+        <h3>Rs. 6,199</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/printed14.jpg" alt="">
+        <p>Printed Lawn Suit</p>
+        <h3>Rs. 5,499</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/printed15.jpg" alt="">
+        <p>Summer Lawn Prints</p>
+        <h3>Rs. 6,799</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/printed16.jpg" alt="">
+        <p>3 Piece Lawn Prints</p>
+        <h3>Rs. 5,299</h3>
+    </div>
+
 </div>
+
 <button id="loadMoreBtn">Load More</button>
 <p id="endText">No More Products</p>
 <!-- Footer -->

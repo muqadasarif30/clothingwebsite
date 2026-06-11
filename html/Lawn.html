@@ -24,29 +24,30 @@
     text-align: center;
     padding: 20px;
 }
-.summer-products{
+.lawn-products{
     display:grid;
     grid-template-columns: repeat(4,1fr);
     gap:20px;
     padding:40px;
 }
 
-.summer-products img{
-    width:100%;
-}
-.video-banner img{
+.product-card img{
     width:100%;
     height:auto;
     display:block;
 }
 
-.search-box input{
-    width: 700px;
-    padding: 14px;
-    font-size: 18px;
-    border: 1px solid #ccc;
-    outline: none;
+.product-card p{
+    font-size:20px;
+    margin-top:22px;
+    line-height:1.5;
 }
+
+.product-card h3{
+    font-size:22px;
+    margin-top:5px;
+}
+
 .hidden{
     display:none;
 }
@@ -62,6 +63,32 @@
     cursor:pointer;
     border-radius:5px;
 }
+
+#endText{
+    text-align:center;
+    font-size:20px;
+    margin-bottom:40px;
+    display:none;
+}
+
+.product-card img:hover{
+    transform:none !important;
+    transition:none !important;
+}
+.video-banner img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.search-box input{
+    width: 700px;
+    padding: 14px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
 .footer{
     background-color:gainsboro;
     padding: 40px 0 20px;
@@ -119,12 +146,7 @@
 .fa-youtube {
     color: #FF0000;
 }
-#endText{
-    text-align:center;
-    font-size:20px;
-    margin-bottom:40px;
-    display:none;
-}
+
 .right-icons i,
 .left-icons i{
     font-size:28px;
@@ -301,27 +323,113 @@
 <h1>LAWN COLLECTION</h1>
 
 <!-- PRODUCTS -->
-<div class="summer-products">
+<div class="lawn-products">
 
-    <img src="../images/3 piece 1.webp " alt="">
-     <img src="../images/3 piece 7.webp" alt="">
-      <img src="../images/3 piece 6.webp " alt="">
-     <img src="../images/3 piece 5.webp" alt="">
-     <img src="../images/3 piece 4.webp" alt="">
-     <img src="../images/3 piece 3.webp" alt="">
-     <img src="../images/3 piece 2.webp" alt="">
-     <img src="../images/pexels-dhanno-19401517.jpg" alt="">
-     <img src="../images/pexels-dhanno-20516287.jpg" alt="">
-     <img src="../images/pexels-dhanno-28213800.jpg" alt="">
-     <img src="../images/pexels-dhanno-33300904.jpg" alt="">
-     <img src="../images/pexels-dhanno-33667895.jpg" alt="">
-      <img src="../images/pexels-dhanno-35340667.jpg" alt="" class="hidden">
-    <img src="../images/pexels-dhanno-36104983.jpg" alt="" class="hidden">
-     <img src="../images/pexels-dhanno-36104988.jpg" alt="" class="hidden">
-     <img src="../images/pexels-dhanno-36325842.jpg" alt="" class="hidden">
-     <img src="../images/pexels-dhanno-36325957.jpg" alt="" class="hidden">
-    
+    <div class="product-card">
+        <img src="../images/lawn1.jpg" alt="">
+        <p>3 Piece Lawn Collection</p>
+        <h3>Rs. 5,999</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/lawn2.jpg" alt="">
+        <p>Premium Lawn Prints</p>
+        <h3>Rs. 6,499</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/lawn3.jpg" alt="">
+        <p>3 Piece Summer Lawn</p>
+        <h3>Rs. 5,799</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/lawn4.jpg" alt="">
+        <p>Luxury Lawn Suit</p>
+        <h3>Rs. 6,999</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/lawn5.jpg" alt="">
+        <p>3 Piece Lawn Prints</p>
+        <h3>Rs. 5,499</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/lawn6.jpg" alt="">
+        <p>Summer Lawn Collection</p>
+        <h3>Rs. 6,299</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/lawn17.jpg" alt="">
+        <p>Premium Lawn Prints</p>
+        <h3>Rs. 7,199</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/lawn7.jpg" alt="">
+        <p>3 Piece Lawn Collection</p>
+        <h3>Rs. 5,899</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/lawn8.jpg" alt="">
+        <p>Luxury Lawn Prints</p>
+        <h3>Rs. 6,799</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/lawn9.jpg" alt="">
+        <p>3 Piece Summer Lawn</p>
+        <h3>Rs. 5,999</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/lawn10.jpg" alt="">
+        <p>Premium Lawn Suit</p>
+        <h3>Rs. 6,499</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/lawn11.jpg" alt="">
+        <p>3 Piece Lawn Prints</p>
+        <h3>Rs. 5,699</h3>
+    </div>
+
+    <!-- HIDDEN PRODUCTS -->
+
+    <div class="product-card hidden">
+        <img src="../images/lawn12.jpg" alt="">
+        <p>Luxury Lawn Collection</p>
+        <h3>Rs. 6,999</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/lawn13.jpg" alt="">
+        <p>3 Piece Lawn Prints</p>
+        <h3>Rs. 5,999</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/lawn14.jpg" alt="">
+        <p>Premium Lawn Suit</p>
+        <h3>Rs. 6,299</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/lawn15.jpg" alt="">
+        <p>Summer Lawn Collection</p>
+        <h3>Rs. 5,799</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/lawn16.jpg" alt="">
+        <p>Luxury Lawn Prints</p>
+        <h3>Rs. 6,499</h3>
+    </div>
 </div>
+
 <button id="loadMoreBtn">Load More</button>
 <p id="endText">No More Products</p>
 <!-- Footer -->

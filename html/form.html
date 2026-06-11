@@ -1,14 +1,14 @@
 <html>
     <head>
         <link rel="stylesheet" href="../css/style2.css">
-        <title>registration form</title>
+        <title>Create new Account</title>
     </head>
     <body>
         <div class="container">
             <div class="registration"></div>
-       <form class="form">
+       <form class="form" id="signupForm">
 
-    <h2 class="title">Log-In</h2>
+    <h2 class="title">Create new Account</h2>
 
     <div class="input-box">
         <input type="text" placeholder="Name" required>
@@ -52,8 +52,49 @@
         </select>
     </div>
 
-    <button class="btn">Sign Up</button>
+   <button type="submit" class="btn">Sign Up</button>
 
     <p class="login">Have an Account ? <a href="#">Login Here</a></p>
 
 </form>
+<script>
+document.getElementById("signupForm").addEventListener("submit", function(event){
+
+    let name = document.querySelector('input[type="text"]').value;
+    let email = document.querySelector('input[type="email"]').value;
+    let password = document.querySelectorAll('input[type="password"]')[0].value;
+    let confirmPassword = document.querySelectorAll('input[type="password"]')[1].value;
+
+    // Name validation
+    if(name.length < 3){
+        alert("Name must be at least 3 characters long");
+        event.preventDefault();
+        return;
+    }
+
+    // Email validation
+    if(!email.includes("@") || !email.includes(".")){
+        alert("Please enter a valid email address");
+        event.preventDefault();
+        return;
+    }
+
+    // Password length validation
+    if(password.length < 6){
+        alert("Password must be at least 6 characters long");
+        event.preventDefault();
+        return;
+    }
+
+    // Confirm password validation
+    if(password !== confirmPassword){
+        alert("Passwords do not match");
+        event.preventDefault();
+        return;
+    }
+
+    alert("Registration Successful!");
+});
+</script>
+</body>
+</html>

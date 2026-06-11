@@ -24,15 +24,32 @@
     text-align: center;
     padding: 20px;
 }
-.summer-products{
+.co-products{
     display:grid;
     grid-template-columns: repeat(4,1fr);
     gap:20px;
     padding:40px;
 }
 
-.summer-products img{
+.product-card img{
     width:100%;
+    height:auto;
+    display:block;
+}
+
+.product-card p{
+    font-size:20px;
+    margin-top:12px;
+    line-height:1.5;
+}
+
+.product-card h3{
+    font-size:28px;
+    margin-top:8px;
+}
+.product-card img:hover{
+    transform:none !important;
+    transition:none !important;
 }
 
 .search-box input{
@@ -301,18 +318,101 @@
 <h1>CO-ORD SETS</h1>
 
 <!-- PRODUCTS -->
-<div class="summer-products">
+<div class="co-products">
 
-     <img src="../images/co-ord .webp" alt="">
-     <img src="../images/co-ord 2.webp " alt="">
-     <img src="../images/co-ord 3.webp" alt="">
-     <img src="../images/3 piece 4.webp" alt="">
-     <img src="../images/3 piece 5.webp " alt="">
-     <img src="../images/3 piece 6.webp" alt="">
-     <img src="../images/3 piece 7.webp" alt="">
-     <img src="../images/co-ord13.webp" alt="" class="hidden">
-     <img src="../images/co-ord14.webp" alt="" class="hidden">
+    <div class="product-card">
+    <img src="../images/co1jpg.jpg" alt="">
+    <p>Premium Co-Ord Set</p>
+    <h3>Rs. 5,999</h3>
 </div>
+
+<div class="product-card">
+    <img src="../images/co2.jpg" alt="">
+    <p>Printed Co-Ord Set</p>
+    <h3>Rs. 6,499</h3>
+</div>
+
+<div class="product-card">
+    <img src="../images/co3.jpg" alt="">
+    <p>Summer Co-Ord Set</p>
+    <h3>Rs. 5,799</h3>
+</div>
+
+<div class="product-card">
+    <img src="../images/co4.jpg" alt="">
+    <p>Luxury Co-Ord Set</p>
+    <h3>Rs. 6,999</h3>
+</div>
+
+<div class="product-card">
+    <img src="../images/co5.jpg" alt="">
+    <p>Premium Co-Ord Set</p>
+    <h3>Rs. 6,299</h3>
+</div>
+
+<div class="product-card">
+    <img src="../images/co6.jpg" alt="">
+    <p>Designer Co-Ord Set</p>
+    <h3>Rs. 7,499</h3>
+</div>
+
+<div class="product-card">
+    <img src="../images/co7.jpg" alt="">
+    <p>Printed Co-Ord Set</p>
+    <h3>Rs. 5,499</h3>
+</div>
+
+<div class="product-card">
+    <img src="../images/co8.jpg" alt="">
+    <p>Luxury Co-Ord Set</p>
+    <h3>Rs. 6,799</h3>
+</div>
+
+    <!-- LOAD MORE -->
+    <div class="product-card hidden">
+        <img src="../images/co9.jpg" alt="">
+        <p>Premium Co-Ord Set</p>
+    <h3>Rs. 5,900</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/co10.jpg" alt="">
+        <p>Premium Co-Ord Set</p>
+    <h3>Rs. 5,000</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/co11.jpg" alt="">
+        <p>Premium Co-Ord Set</p>
+    <h3>Rs. 6,000</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/co12.jpg" alt="">
+        <p>Premium Co-Ord Set</p>
+    <h3>Rs. 4,500</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/co13.jpg" alt="">
+        <p>Premium Co-Ord Set</p>
+    <h3>Rs. 5,200</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/co14.jpg" alt="">
+        <p>Premium Co-Ord Set</p>
+    <h3>Rs. 5,500</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/co15.jpg" alt="">
+        <p>Premium Co-Ord Set</p>
+    <h3>Rs. 5,000</h3>
+    </div>
+
+</div>
+
 <button id="loadMoreBtn">Load More</button>
 <p id="endText">No More Products</p>
 <!-- Footer -->

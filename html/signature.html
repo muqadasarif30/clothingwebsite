@@ -24,16 +24,30 @@
     text-align: center;
     padding: 20px;
 }
-.summer-products{
+.signature-products{
     display:grid;
     grid-template-columns: repeat(4,1fr);
     gap:20px;
     padding:40px;
 }
 
-.summer-products img{
+.product-card img{
     width:100%;
+    height:auto;
+    display:block;
 }
+
+.product-card p{
+    font-size:20px;
+    margin-top:12px;
+    line-height:1.5;
+}
+
+.product-card h3{
+    font-size:28px;
+    margin-top:8px;
+}
+
 .video-banner img{
     width:100%;
     height:auto;
@@ -49,6 +63,10 @@
 }
 .hidden{
     display:none;
+}
+.product-card img:hover{
+    transform:none !important;
+    transition:none !important;
 }
 
 #loadMoreBtn{
@@ -301,27 +319,120 @@
 <h1>SIGNATURE COLLECTION</h1>
 
 <!-- PRODUCTS -->
-<div class="summer-products">
+<div class="signature-products">
 
-    <img src="../images/3 piece 1.webp" alt="">
-     <img src="../images/3 piece 7.webp " alt="">
-      <img src="../images/3 piece 6.webp " alt="">
-     <img src="../images/3 piece 5.webp " alt="">
-     <img src="../images/3 piece 4.webp" alt="">
-     <img src="../images/3 piece 3.webp" alt="">
-     <img src="../images/3 piece 2.webp" alt="">
-     <img src="../images/pexels-dhanno-19401517.jpg" alt="">
-     <img src="../images/pexels-dhanno-20516287.jpg" alt="">
-     <img src="../images/pexels-dhanno-28213800.jpg" alt="">
-     <img src="../images/pexels-dhanno-33300904.jpg" alt="">
-     <img src="../images/pexels-dhanno-33667895.jpg" alt="">
-      <img src="../images/pexels-dhanno-35340667.jpg" alt="" class="hidden">
-    <img src="../images/pexels-dhanno-36104983.jpg" alt="" class="hidden">
-     <img src="../images/pexels-dhanno-36104988.jpg" alt="" class="hidden">
-     <img src="../images/pexels-dhanno-36325842.jpg" alt="" class="hidden">
-     <img src="../images/pexels-dhanno-36325957.jpg" alt="" class="hidden">
-     
+    <div class="product-card">
+        <img src="../images/sig1.jpg" alt="">
+        <p>Signature Pret Collection</p>
+        <h3>Rs. 7,999</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/sig2.jpg" alt="">
+        <p>Luxury Signature Pret</p>
+        <h3>Rs. 8,499</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/sig3.jpg" alt="">
+        <p>Premium Pret Wear</p>
+        <h3>Rs. 7,299</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/sig4.jpg" alt="">
+        <p>Signature Pret Collection</p>
+        <h3>Rs. 8,999</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/sig5.jpg" alt="">
+        <p>Luxury Pret Wear</p>
+        <h3>Rs. 7,799</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/sig6.jpg" alt="">
+        <p>Premium Signature Pret</p>
+        <h3>Rs. 9,299</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/sig7.jpg" alt="">
+        <p>Designer Pret Collection</p>
+        <h3>Rs. 8,199</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/sig8.jpg" alt="">
+        <p>Luxury Signature Wear</p>
+        <h3>Rs. 7,599</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/sig10.jpg" alt="">
+        <p>Signature Pret Collection</p>
+        <h3>Rs. 8,499</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/pexels-dhanno-20516287.jpg" alt="">
+        <p>Premium Pret Wear</p>
+        <h3>Rs. 7,999</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/pexels-dhanno-28213800.jpg" alt="">
+        <p>Luxury Signature Pret</p>
+        <h3>Rs. 8,799</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/pexels-dhanno-33300904.jpg" alt="">
+        <p>Designer Pret Collection</p>
+        <h3>Rs. 9,499</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/pexels-dhanno-33667895.jpg" alt="">
+        <p>Premium Signature Wear</p>
+        <h3>Rs. 7,699</h3>
+    </div>
+
+    <!-- HIDDEN PRODUCTS -->
+
+    <div class="product-card hidden">
+        <img src="../images/pexels-dhanno-35340667.jpg" alt="">
+        <p>Luxury Pret Wear</p>
+        <h3>Rs. 8,999</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/pexels-dhanno-36104983.jpg" alt="">
+        <p>Signature Pret Collection</p>
+        <h3>Rs. 7,899</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/sig9.jpg" alt="">
+        <p>Premium Pret Wear</p>
+        <h3>Rs. 8,299</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/pexels-dhanno-36325842.jpg" alt="">
+        <p>Luxury Signature Pret</p>
+        <h3>Rs. 9,199</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/pexels-dhanno-36325957.jpg" alt="">
+        <p>Designer Pret Collection</p>
+        <h3>Rs. 8,599</h3>
+    </div>
+
 </div>
+
 <button id="loadMoreBtn">Load More</button>
 <p id="endText">No More Products</p>
 <!-- Footer -->

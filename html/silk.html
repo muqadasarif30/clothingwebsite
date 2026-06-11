@@ -24,15 +24,32 @@
     text-align: center;
     padding: 20px;
 }
-.summer-products{
+.silk-products{
     display:grid;
     grid-template-columns: repeat(4,1fr);
     gap:20px;
     padding:40px;
 }
 
-.summer-products img{
+.product-card img{
     width:100%;
+    height:auto;
+    display:block;
+}
+
+.product-card p{
+    font-size:20px;
+    margin-top:12px;
+    line-height:1.5;
+}
+
+.product-card h3{
+    font-size:28px;
+    margin-top:8px;
+}
+.product-card img:hover{
+    transform:none !important;
+    transition:none !important;
 }
 .video-banner img{
     width:100%;
@@ -300,27 +317,102 @@
 <h1>SILK PRET</h1>
 
 <!-- PRODUCTS -->
-<div class="summer-products">
+<div class="silk-products">
 
-    <img src="../images/3 piece 1.webp" alt="">
-     <img src="../images/3 piece 7.webp" alt="">
-      <img src="../images/3 piece 6.webp" alt="">
-     <img src="../images/3 piece 5.webp" alt="">
-     <img src="../images/3 piece 4.webp" alt="">
-     <img src="../images/3 piece 3.webp" alt="">
-     <img src="../images/3 piece 2.webp" alt="">
-     <img src="../images/pexels-dhanno-19401517.jpg" alt="">
-     <img src="../images/pexels-dhanno-20516287.jpg" alt="">
-     <img src="../images/pexels-dhanno-28213800.jpg" alt="">
-     <img src="../images/pexels-dhanno-33300904.jpg" alt="">
-     <img src="../images/pexels-dhanno-33667895.jpg" alt="">
-      <img src="../images/pexels-dhanno-35340667.jpg" alt="" class="hidden">
-    <img src="../images/pexels-dhanno-36104983.jpg" alt="" class="hidden">
-     <img src="../images/pexels-dhanno-36104988.jpg" alt="" class="hidden">
-     <img src="../images/pexels-dhanno-36325842.jpg" alt="" class="hidden">
-     <img src="../images/pexels-dhanno-36325957.jpg" alt="" class="hidden">
-    
+    <div class="product-card">
+        <img src="../images/silk1.jpg" alt="">
+        <p>Luxury Silk Collection</p>
+        <h3>Rs. 9,999</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/silk2.jpg" alt="">
+        <p>Premium Silk Pret</p>
+        <h3>Rs. 8,499</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/silk3.jpg" alt="">
+        <p>Designer Silk Wear</p>
+        <h3>Rs. 10,299</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/silk4.jpg" alt="">
+        <p>Luxury Silk Collection</p>
+        <h3>Rs. 9,799</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/silk5.jpg" alt="">
+        <p>Premium Silk Pret</p>
+        <h3>Rs. 8,999</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/silk6.jpg" alt="">
+        <p>Luxury Silk Wear</p>
+        <h3>Rs. 10,499</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/silk7.jpg" alt="">
+        <p>Designer Silk Collection</p>
+        <h3>Rs. 9,299</h3>
+    </div>
+
+    <div class="product-card">
+        <img src="../images/silk8.jpg" alt="">
+        <p>Premium Silk Pret</p>
+        <h3>Rs. 8,799</h3>
+    </div>
+
+    <!-- HIDDEN PRODUCTS -->
+
+    <div class="product-card hidden">
+        <img src="../images/silk9.jpg" alt="">
+        <p>Luxury Silk Wear</p>
+        <h3>Rs. 10,999</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/silk10.jpg" alt="">
+        <p>Designer Silk Collection</p>
+        <h3>Rs. 9,899</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/silk11.jpg" alt="">
+        <p>Premium Silk Pret</p>
+        <h3>Rs. 8,699</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/silk12.jpg" alt="">
+        <p>Luxury Silk Collection</p>
+        <h3>Rs. 10,299</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/silk13.jpg" alt="">
+        <p>Designer Silk Wear</p>
+        <h3>Rs. 9,599</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/silk14.jpg" alt="">
+        <p>Premium Silk Pret</p>
+        <h3>Rs. 8,999</h3>
+    </div>
+
+    <div class="product-card hidden">
+        <img src="../images/silk15.jpg" alt="">
+        <p>Luxury Silk Collection</p>
+        <h3>Rs. 10,799</h3>
+    </div>
+
 </div>
+
 <button id="loadMoreBtn">Load More</button>
 <p id="endText">No More Products</p>
 <!-- Footer -->
