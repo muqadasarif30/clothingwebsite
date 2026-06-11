@@ -4,43 +4,110 @@
     <title>Login</title>
      <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
 
     .container{
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:80px 0;
+
+    padding:200px 0;  
+    min-height:60vh;   
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.4),
+                    rgba(0,0,0,0.4)),
+    url("../images/bg.jpeg");
+
+    background-position: cover;
+    background-position:contain;
+    background-repeat:no-repeat;
+}
+
+.login a{
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .form{
-    width:350px;
+    width:600px;
+    padding:40px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:20px;
+    box-shadow:0 8px 32px rgba(0,0,0,0.2);
     text-align:center;
+    
 }
 
+
 .title{
-    font-size:40px;
+    color:white;
+    font-size:50px;
     margin-bottom:30px;
 }
 
 .input-box{
-    margin-bottom:15px;
+    position:relative;
+    margin-bottom:20px;
+    
+}
+.input-box i{
+    position:absolute;
+    left:-10px;
+    top:50%;
+    transform:translateY(-50%);
+
+    width:42px;
+    height:42px;
+
+    background:white;
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:22px;
+    color:black;
+    z-index:1;
 }
 
+
 .input-box input{
-    width:100%;
-    padding:12px;
+    width:90%;
+    padding:18px 18px 18px 60px;
+
+    background:rgba(255,255,255,0.15);
+    border:1px solid rgba(255,255,255,0.3);
+
+    border-radius:25px;
+    color:white;
+    font-size: 20px;
+}
+
+.input-box input::placeholder{
+    color:rgba(255,255,255,0.8);
+    box-sizing: border-box;
+}
+
+.login{
+    margin-top:25px;
     font-size:16px;
-    box-sizing:border-box;
 }
 
 .btn{
-    background:black;
-    color:white;
+    background:white;
+    color:black;
     border:none;
-    padding:12px 35px;
+    padding:15px 45px;
+    border-radius:25px;
+    font-weight:bold;
     cursor:pointer;
-    margin-top:10px;
 }
 .footer{
     background:#eaeaea;
@@ -191,13 +258,15 @@
 
         <h2 class="title">Log In</h2>
 
-        <div class="input-box">
-            <input type="email" placeholder="Email Address" required>
-        </div>
+       <div class="input-box">
+    <i class="fa-solid fa-user"></i>
+    <input type="email" placeholder="Username">
+</div>
 
         <div class="input-box">
-            <input type="password" placeholder="Password" required>
-        </div>
+    <i class="fa-solid fa-lock"></i>
+    <input type="password" placeholder="Password">
+</div>
 
         <button type="submit" class="btn">Log In</button>
 
@@ -281,6 +350,45 @@ function toggleSearch(){
         searchBox.style.display = "block";
     }
 }
+</script>
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    let email = document.querySelector('input[type="email"]').value.trim();
+    let password = document.querySelector('input[type="password"]').value.trim();
+
+    // Email empty check
+    if(email === ""){
+        alert("Please enter your email address");
+        return;
+    }
+
+    // Email format check
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if(!emailPattern.test(email)){
+        alert("Please enter a valid email address");
+        return;
+    }
+
+    // Password empty check
+    if(password === ""){
+        alert("Please enter your password");
+        return;
+    }
+
+    // Password length check
+    if(password.length < 6){
+        alert("Password must be at least 6 characters long");
+        return;
+    }
+
+    alert("Login Successful!");
+    window.location.href = "../html/Noor-e-Libas.html";
+
+});
 </script>
 </body>
 </html>
