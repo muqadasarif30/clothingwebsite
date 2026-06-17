@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Checkout - Noor-e-Libas</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background:#f5f5f5;
+            margin:0;
+        }
+
+        .checkout-container{
+            width:80%;
+            max-width:700px;
+            margin:50px auto;
+            background:white;
+            padding:40px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:30px;
+        }
+
+        .form-group{
+            margin-bottom:15px;
+        }
+
+        label{
+            display:block;
+            margin-bottom:5px;
+            font-weight:bold;
+        }
+
+        input,
+        select,
+        textarea{
+            width:100%;
+            padding:12px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            box-sizing:border-box;
+        }
+
+        .row{
+            display:flex;
+            gap:15px;
+        }
+
+        .row .form-group{
+            flex:1;
+        }
+
+        .btn{
+            width:100%;
+            background:black;
+            color:white;
+            border:none;
+            padding:15px;
+            font-size:16px;
+            cursor:pointer;
+            margin-top:20px;
+        }
+
+        .btn:hover{
+            background:#333;
+        }
+        .submit-btn{
+    width:100%;
+    padding:15px;
+    background:black;
+    color:white;
+    border:none;
+    font-size:18px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+.submit-btn:hover{
+    background:#333;
+}
+
+.payment-box{
+    width: 100%;
+}
+
+.sub-text{
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+/* CARD STYLE */
+.payment-card{
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* hover effect */
+.payment-card:hover{
+    border-color: #4a63ff;
+}
+
+/* hide radio */
+.payment-card input{
+    margin-right: 10px;
+}
+
+/* layout */
+.card-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* left text */
+.title{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.desc{
+    font-size: 14px;
+    color: gray;
+    margin-top: 4px;
+}
+
+/* icons */
+.right i{
+    font-size: 20px;
+    margin-left: 8px;
+    color: #333;
+}
+
+/* SELECTED STYLE (important part like your image) */
+.payment-card input:checked + .card-content{
+    border: border-box;
+}
+    </style>
+</head>
+
+<body>
+
+<div class="checkout-container">
+
+    <h2>CHECKOUT</h2>
+
+  <form action="" method="POST">
+
+        <div class="form-group">
+            <label>Full Name</label>
+           <input type="text" name="fullname" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" name="phone" required>
+        </div>
+
+        <div class="form-group">
+            <label>City</label>
+           <select name="city" required>
+                <option value="">Select City</option>
+                <option>Lahore</option>
+                <option>Karachi</option>
+                <option>Islamabad</option>
+                <option>Rawalpindi</option>
+                <option>Faisalabad</option>
+                <option>Multan</option>
+                <option>Peshawar</option>
+                <option>Quetta</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Complete Address</label>
+           <textarea name="address" rows="4" required></textarea>
+        </div>
+
+  <div class="payment-box">
+
+    <h3>Payment</h3>
+    <p class="sub-text">All transactions are secure and encrypted.</p>
+
+    <!-- PAYFAST -->
+    <label class="payment-card">
+
+        <input type="radio" name="payment" value="PayFast" checked>
+
+        <div class="card-content">
+
+            <div class="left">
+                <div class="title">
+                    PAYFAST (Pay via Debit/Credit/Wallet/Bank Account)
+                </div>
+
+                <div class="desc">
+                    You'll be redirected to PAYFAST to complete your purchase.
+                </div>
+            </div>
+
+            <div class="right">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-solid fa-wallet"></i>
+                <i class="fa-solid fa-building-columns"></i>
+            </div>
+
+        </div>
+    </label>
+
+    <!-- COD -->
+    <label class="payment-card">
+
+      <input type="radio" name="payment" value="COD">
+
+        <div class="card-content">
+
+            <div class="left">
+                <div class="title">Cash on Delivery (COD)</div>
+            </div>
+
+        </div>
+    </label>
+
+</div>
+
+            <br><br>
+
+        <button type="submit" class="btn">
+            PLACE ORDER
+        </button>
+
+
+    </form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Details</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+
+    .footer-top{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding-bottom: 30px;
+}
+
+.footer-column h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-column p{
+    font-size: 15px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+/* SOCIAL ICONS */
+.footer-middle{
+    padding: 15px 0;
+}
+
+.footer-middle i{
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* BOTTOM TEXT */
+.footer-bottom p{
+    font-size: 11px;
+    color: gray;
+    margin-top: 10px;
+}
+/* Facebook */
+.fa-facebook {
+    color: #1877F2;
+}
+
+/* Instagram */
+.fa-instagram {
+    color: #E4405F;
+}
+
+/* YouTube */
+.fa-youtube {
+    color: #FF0000;
+}
+#endText{
+    text-align:center;
+    font-size:20px;
+    margin-bottom:40px;
+    display:none;
+}
+.product-detail{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:40px;
+    padding:50px;
+}
+
+.product-description{
+    width:250px;
+    line-height:1.8;
+}
+
+.product-description h3{
+    margin-bottom:20px;
+    text-decoration:underline;
+}
+
+.product-image{
+    width:500px;
+}
+
+.product-image img{
+    width:100%;
+    border-radius:10px;
+}
+
+.product-info{
+    width:350px;
+}
+
+.product-info h1{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.product-info h2{
+    font-size:28px;
+    margin-bottom:20px;
+}
+.product-description{
+    width:300px;
+}
+
+.product-description h3{
+    font-size:34px;
+}
+
+.product-description p{
+    font-size:21px;
+}
+
+.product-info input{
+    width:80px;
+    padding:10px;
+    margin:15px 0 25px;
+}
+
+.cart-btn{
+    width:100%;
+    padding:16px;
+    background:black;
+    color:white;
+    border:none;
+    font-size:18px;
+    cursor:pointer;
+    border-radius:8px;
+}
+.quantity-box{
+display:flex;
+align-items:center;
+gap:15px;
+margin:15px 0 25px;
+}
+
+.quantity-box button{
+width:40px;
+height:40px;
+border:1px solid #ccc;
+background:white;
+cursor:pointer;
+font-size:20px;
+}
+
+.quantity-box span{
+font-size:20px;
+font-weight:bold;
+min-width:20px;
+text-align:center;
+}
+.buy-btn{
+    width:100%;
+    padding:15px;
+    background:black;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+.buy-btn:hover{
+    background:#333;
+}
+
+</style>
+</head>
+<body>
+    <!-- TOP BAR -->
+<div class="top-bar">
+
+  <!-- LEFT SIDE -->
+  <div class="left-icons">
+    <i style="color:aliceblue" class="fa-solid fa-phone"></i>
+    <i class="fa-brands fa-whatsapp"></i>
+  </div>
+
+  <!-- CENTER TEXT -->
+  <marquee style="font-size: 15px;">
+      Free delivery for orders above Rs 4999 within Pakistan.
+  </marquee>
+
+  <!-- RIGHT SIDE -->
+  <div class="right-icons">
+
+    <i class="fa-solid fa-magnifying-glass" onclick="toggleSearch()"></i>
+
+    <a href="../html/cart.html">
+      <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+
+    <a href="../html/form.html">
+      <i class="fa-solid fa-user"></i>
+    </a>
+  </div>
+</div>
+
+<!-- SEARCH BOX -->
+<div id="searchBox" class="search-box">
+    <input type="text" placeholder="Search products...">
+</div>
+
+<!-- LOGO -->
+<div class="logo-navbar">
+    <img src="../images/WhatsApp Image 2026-04-18 at 1.51.18 AM.jpeg" alt="Noor-e-Libas">
+</div>
+
+    <!-- NAVBAR -->
+<header>
+
+<div class="menu-bar">
+    <!-- MENU ICON -->
+    <div class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+<ul>
+    <!-- WOMEN -->
+    <li class="women-menu">  Women
+        <div class="dropdown">
+
+            <div class="dropdown-content">
+
+                <div class="column">
+                    <h3>READY TO WEAR</h3>
+                    <p>Embroidered</p>
+                    <p>Printed</p>
+                    <p>Solids</p>
+                </div>
+
+                <div class="column">
+                    <h3>UNSTITCHED</h3>
+                    <p>Embroidered</p>
+                    <p>Printed</p>
+                    <p>Lawn</p>
+                </div>
+
+                <div class="column">
+                    <h3>CO-ORD SET</h3>
+                    <p>Printed</p>
+                    <p>Embroidered</p>
+                    <p>Solids</p>
+                </div>
+
+                <div class="column">
+                    <h3>FRAGRANCE</h3>
+                    <p>Perfumes</p>
+                    <p>Body Mist</p>
+                </div>
+
+                <div class="dropdown-image">
+                    <img src="../images/Women.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </li>
+    <!-- GIRLS -->
+    <li>Girls</li>
+
+    <!-- MEN -->
+    <li class="men-menu">
+        Men
+        <div class="dropdown2">
+
+            <div class="dropdown-content">
+
+                <div class="column">
+                    <h3>SUITS</h3>
+                    <p>Wash & Wear</p>
+                    <p>Blended</p>
+                    <p>Cotton</p>
+                </div>
+
+                <div class="column">
+                    <h3>BOTTOMS</h3>
+                    <p>Trousers</p>
+                    <p>Jeans</p>
+                </div>
+
+                <div class="column">
+                    <h3>FRAGRANCES</h3>
+                    <p>Perfumes</p>
+                    <p>Body Spray</p>
+                </div>
+
+                <div class="dropdown-image">
+                    <img src="../images/Men.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </li>
+
+    <!-- SALE -->
+    <li class="sale-menu">
+
+        <span style="color:red;">Sale</span>
+
+        <div class="sale-dropdown">
+            <img src="../images/Sale.webp" alt="">
+        </div>
+    </li>
+</ul>
+</div>
+</header>
+
+<div class="product-detail">
+
+    <div class="product-description">
+        <h3>Description</h3>
+
+        <p id="shirt"></p>
+        <p id="shirtFabric"></p>
+        <p id="trouser"></p>
+        <p id="dupatta"></p>
+        <p id="dupattaFabric"></p>
+
+        <p id="color"></p>
+    </div>
+
+    <div class="product-image">
+        <img id="productImage" src="" alt="">
+    </div>
+
+    <div class="product-info">
+
+    <h1 id="productName"></h1>
+
+    <h2 id="productPrice"></h2>
+
+    <div class="quantity-box">
+
+        <button onclick="decreaseQuantity()">-</button>
+
+        <span id="qty">1</span>
+
+        <button onclick="increaseQuantity()">+</button>
+
+    </div>
+
+    <button class="cart-btn" onclick="addToCart()">
+    ADD TO CART
+</button>
+
+<button class="buy-btn"
+onclick="window.location.href='checkout.php'">
+    BUY NOW
+</button>
+
+
+</div>
+<script>
+
+const products = {
+
+1:{
+image:"../images/3 piece 1.webp",
+name:"3 Piece Lawn Suit - Embroidered",
+price:"Rs. 6,000",
+shirt:"1 PC Embroidered Shirt",
+trouser:"plain lawn",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed chiffon Dupatta",
+dupattaFabric:"Fabric: Monar Slub",
+color:"Color: Light Blue"
+},
+
+2:{
+image:"../images/3 piece 7.webp",
+name:"3 Piece Lawn Suit - Embroidered",
+price:"Rs. 6,499",
+shirt:"1 PC Embroidered Shirt",
+trouser:"plain lawn",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed chiffon Dupatta",
+dupattaFabric:"Fabric: Silk Blend",
+color:"Color: Lemon"
+},
+
+3:{
+image:"../images/3 piece 6.webp",
+name:"Summer Lawn Collection",
+price:"Rs. 5,499",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"plain lawn",
+dupatta:"1 PC Printed chiffon Dupatta",
+dupattaFabric:"Fabric: Monar Slub",
+color:"Color: Pink"
+},
+
+4:{
+image:"../images/3 piece 5.webp",
+name:"Premium Lawn Suit",
+price:"Rs. 5,499",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"printed lawn",
+dupatta:"1 PC Printed chiffon Dupatta",
+dupattaFabric:"Fabric: Chiffon",
+color:"Color: Blue"
+},
+
+5:{
+image:"../images/3 piece 4.webp",
+name:"Elegant Lawn Collection",
+price:"Rs. 6,999",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"minimal embroided",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Monar Slub",
+color:"Color: Ice Blue"
+},
+
+6:{
+image:"../images/3 piece 3.webp",
+name:"Classic Lawn Suit",
+price:"Rs. 5,500",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"printed chiffon",
+
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Silk Blend",
+color:"Color: Navy Blue"
+},
+
+7:{
+image:"../images/3 piece 2.webp",
+name:"Festive Lawn Collection",
+price:"Rs. 6,290",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"plain lawn",
+dupatta:"1 PC Printed lawn Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: mint green"
+},
+
+8:{
+image:"../images/pexels-dhanno-19401517.jpg",
+name:"Signature party waer",
+price:"Rs. 10,000",
+shirt:"1 PC embroided Shirt",
+shirtFabric:"Fabric: Net",
+dupatta:"1 PC Dupatta",
+dupattaFabric:"Fabric: pure net",
+color:"Color: Black"
+},
+
+9:{
+image:"../images/pexels-dhanno-20516287.jpg",
+name:"Modern Lawn Design",
+price:"Rs. 6,500",
+shirt:"1 PC Embroided Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"plain lawn",
+dupatta:"1 PC Printed chiffon Dupatta",
+dupattaFabric:"Fabric: Voile",
+color:"Color: Lilac"
+},
+
+10:{
+image:"../images/pexels-dhanno-28213800.jpg",
+name:"Luxury Pret Style",
+price:"Rs. 6,599",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"plain lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Chiffon",
+color:"Color: Red"
+},
+
+11:{
+image:"../images/pexels-dhanno-33300904.jpg",
+name:"Elegant Summer Wear",
+price:"Rs. 6,500",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Monar Slub",
+color:"Color: Grayish color"
+},
+
+12:{
+image:"../images/pexels-dhanno-33667895.jpg",
+name:"Designer Lawn Suit",
+price:"Rs. 6,000",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"plain lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color:Blue "
+},
+
+13:{
+image:"../images/pexels-dhanno-35340667.jpg",
+name:"Lawn Collection",
+price:"Rs. 5,599",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"plain lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Chiffon",
+color:"Color: Light Pink"
+},
+
+14:{
+image:"../images/pexels-dhanno-36104983.jpg",
+name:"Luxury lawn embroided suit",
+price:"Rs. 10,500",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"plain lawn",
+dupatta:"Embroided Dupatta",
+dupattaFabric:"Fabric: Silk Blend",
+color:"Color: beige"
+},
+
+
+16:{
+image:"../images/pexels-dhanno-36325842.jpg",
+name:"Exclusive Summer Collection",
+price:"Rs. 7,500",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"plain lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Chiffon",
+color:"Color: Light Blue"
+},
+
+17:{
+image:"../images/pexels-dhanno-36325957.jpg",
+name:"Noor-e-Libas Premium Lawn",
+price:"Rs. 7,500",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"plain lawn",
+
+dupatta:"1 PC Printed chiffon Dupatta",
+dupattaFabric:"Fabric: Monar Slub",
+color:"Color: Light Purple"
+},
+
+
+101:{
+image:"../images/embroided1.jpg",
+name:"Luxury Embroidered Lawn Suit",
+price:"Rs. 6,499",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Premium Lawn",
+dupatta:"1 PC Embroidered Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Ivory"
+},
+
+102:{
+image:"../images/embroided2.jpg",
+name:"Classic Embroidered Collection",
+price:"Rs. 6,499",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Chiffon",
+color:"Color: Lilac"
+},
+
+103:{
+image:"../images/embroided3.jpg",
+name:"Signature Lawn Collection",
+price:"Rs. 7,899",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Embroidered Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Lime"
+},
+
+104:{
+image:"../images/embroided4.jpg",
+name:"Premium Embroidered Suit",
+price:"Rs. 6,400",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Silk Blend",
+color:"Color: Beige and green"
+},
+
+105:{
+image:"../images/embroided5.jpg",
+name:"Elegant Embroidered Wear",
+price:"Rs. 9,999",
+shirt:"1 PC Embroidered Frock",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Embroidered Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Light Green"
+},
+
+106:{
+image:"../images/embroided6.jpg",
+name:"Designer Lawn Collection",
+price:"Rs. 6,000",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Chiffon",
+color:"Color: Beige"
+},
+
+107:{
+image:"../images/embroided7.jpg",
+name:"Festive Embroidered Suit",
+price:"Rs. 9,880",
+Frock:"1 PC Embroidered Frock",
+shirtFabric:"Fabric: Premium Lawn",
+dupatta:"1 PC Embroidered Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Off-White"
+},
+
+108:{
+image:"../images/embroided8.jpg",
+name:"Luxury Formal Collection",
+price:"Rs. 6,499",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Embroided Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Mint Green"
+},
+
+109:{
+image:"../images/embroided9.jpg",
+name:"Elegant Summer Lawn",
+price:"Rs. 5,500",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Embroidered Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Black"
+},
+
+110:{
+image:"../images/embroided10.jpg",
+name:"Premium Pret Collection",
+price:"Rs. 8,890",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Chiffon",
+color:"Color: Pistachio Color"
+},
+
+111:{
+image:"../images/embroided11.jpg",
+name:"Embroidedd Designer Suit",
+price:"Rs. 7,000",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Premium Lawn",
+dupatta:"1 PC Embroidered Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Emerald Green"
+},
+
+112:{
+image:"../images/embroided12.jpg",
+name:"Classic Formal Lawn",
+price:"Rs. 8,000",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Silk Blend",
+color:"Color: Maroon"
+},
+
+113:{
+image:"../images/embroided13.jpg",
+name:"Exclusive Embroidered Wear",
+price:"Rs. 6,400",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Embroidered Dupatta",
+dupattaFabric:"Fabric: Chiffon",
+color:"Color: Green"
+},
+
+114:{
+image:"../images/embroided14.jpg",
+name:"Noor-e-Libas Signature",
+price:"Rs. 8,890",
+Frock:"1 PC Embroidered Frock",
+frockFabric:"Fabric: Premium Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Chiffon",
+color:"Color: Lime"
+},
+
+115:{
+image:"../images/embroided15.jpg",
+name:"Royal Embroidered Collection",
+price:"Rs. 10,500",
+frock:"1 PC Embroidered Shirt",
+frockFabric:"Fabric: Lawn",
+dupatta:"1 PC Embroidered Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Mint green and Off-White"
+},
+116:{
+image:"../images/embroided16.jpg",
+name:"Premium Embroidered Luxury Suit",
+price:"Rs. 9,000",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Premium Lawn",
+dupatta:"1 PC Embroidered Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Ice Blue"
+},
+
+117:{
+image:"../images/embroided17.jpg",
+name:"Lawn Collection",
+price:"Rs. 6,000",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Ebroided Lawn",
+dupatta:"1 PC Embroidered Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Off-White"
+},
+
+201:{
+image:"../images/printed1.jpg",
+name:"3 Piece Lawn Prints",
+price:"Rs. 5,999",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Voile",
+color:"Color: Sky Blue and Off-White"
+},
+
+202:{
+image:"../images/printed2.jpg",
+name:"3 Piece Lawn Prints",
+price:"Rs. 6,499",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Voile",
+color:"Color: Off-White"
+},
+
+203:{
+image:"../images/printed3.jpg",
+name:"Luxury Lawn Prints",
+price:"Rs. 5,499",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Monar Slub",
+color:"Color: Pink"
+},
+
+204:{
+image:"../images/printed4.jpg",
+name:"3 Piece Printed Lawn Suit",
+price:"Rs. 6,999",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Chiffon",
+color:"Color: Pink"
+},
+
+205:{
+image:"../images/printed5.jpg",
+name:"Summer Lawn Prints",
+price:"Rs. 5,799",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Voile",
+color:"Color: Peech"
+},
+
+206:{
+image:"../images/printed6.jpg",
+name:"3 Piece Lawn Prints",
+price:"Rs. 4,999",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Voile",
+color:"Color:Ocean Blue"
+},
+
+207:{
+image:"../images/printed7.jpg",
+name:"Premium Printed Lawn",
+price:"Rs. 6,299",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Monar Slub",
+color:"Color: Gray"
+},
+
+208:{
+image:"../images/printed8.jpg",
+name:"3 Piece Lawn Collection",
+price:"Rs. 5,699",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Voile",
+color:"Color: Creme"
+},
+
+209:{
+image:"../images/printed9.jpg",
+name:"Luxury Lawn Prints",
+price:"Rs. 7,299",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Creme Color"
+},
+
+210:{
+image:"../images/printed10.jpg",
+name:"3 Piece Lawn Prints",
+price:"Rs. 5,999",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Voile",
+color:"Color: Lavender"
+},
+
+211:{
+image:"../images/printed11.jpg",
+name:"Printed Lawn Suit",
+price:"Rs. 6,499",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Chiffon",
+color:"Color: Mint Green"
+},
+
+212:{
+image:"../images/printed12.jpg",
+name:"Luxury Lawn Prints",
+price:"Rs. 5,899",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Monar Slub",
+color:"Color: Pink and Off-White"
+},
+
+213:{
+image:"../images/printed13.jpg",
+name:"3 Piece Lawn Collection",
+price:"Rs. 6,199",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Voile",
+color:"Color: Tea-Pink"
+},
+
+214:{
+image:"../images/printed14.jpg",
+name:"Printed Lawn Suit",
+price:"Rs. 5,499",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Chiffon",
+color:"Color: Light-Green"
+},
+
+215:{
+image:"../images/printed15.jpg",
+name:"Summer Lawn Prints",
+price:"Rs. 6,799",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Pink"
+},
+
+216:{
+image:"../images/printed16.jpg",
+name:"3 Piece Lawn Prints",
+price:"Rs. 5,299",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Voile",
+color:"Color: Olive"
+},
+
+301:{
+image:"../images/lawn1.jpg",
+name:"3 Piece Lawn Collection",
+price:"Rs. 5,999",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Voile",
+color:"Color: Sky Blue"
+},
+
+302:{
+image:"../images/lawn2.jpg",
+name:"Premium Lawn Prints",
+price:"Rs. 10,000",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Lemon"
+},
+
+303:{
+image:"../images/lawn3.jpg",
+name:"Luxury 3 Piece Summer Lawn",
+price:"Rs. 10,000",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Chiffon",
+color:"Color: Lavender"
+},
+
+304:{
+image:"../images/lawn4.jpg",
+name:"Printed Lawn Suit",
+price:"Rs. 6,999",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Voile",
+color:"Color: Creme"
+},
+
+305:{
+image:"../images/lawn5.jpg",
+name:"3 Piece Lawn Prints",
+price:"Rs. 7,500",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Silk Blend",
+color:"Color: Creme"
+},
+
+306:{
+image:"../images/lawn6.jpg",
+name:"Summer Lawn Collection",
+price:"Rs. 6,299",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Voile",
+color:"Color: Orange"
+},
+
+307:{
+image:"../images/lawn17.jpg",
+name:"Premium Lawn Prints",
+price:"Rs. 7,199",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Orange"
+},
+
+308:{
+image:"../images/lawn7.jpg",
+name:"3 Piece Lawn Collection",
+price:"Rs. 7,200",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Voile",
+color:"Color: Black"
+},
+
+309:{
+image:"../images/lawn8.jpg",
+name:"Luxury Lawn Prints",
+price:"Rs. 6,799",
+frock:"1 PC Printed Frock",
+frockFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Chiffon",
+color:"Color: Olive Green"
+},
+
+310:{
+image:"../images/lawn9.jpg",
+name:"3 Piece Summer Lawn",
+price:"Rs. 5,999",
+frock:"1 PC Printed Frock",
+frockFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Voile",
+color:"Color: Maroon"
+},
+
+311:{
+image:"../images/lawn10.jpg",
+name:"Premium Lawn Suit",
+price:"Rs. 6,499",
+frock:"1 PC Embroidered Frock",
+frockFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Mint"
+},
+
+312:{
+image:"../images/lawn11.jpg",
+name:"3 Piece Lawn Prints",
+price:"Rs. 5,699",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Voile",
+color:"Color: Whitw and mint"
+},
+
+313:{
+image:"../images/lawn12.jpg",
+name:"Luxury Lawn Collection",
+price:"Rs. 6,999",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Teal"
+},
+
+314:{
+image:"../images/lawn13.jpg",
+name:"3 Piece Lawn Prints",
+price:"Rs. 5,999",
+frock:"1 PC Printed Frock",
+frockFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Voile",
+color:"Color: Olive Green"
+},
+
+315:{
+image:"../images/lawn14.jpg",
+name:"Premium Lawn Suit",
+price:"Rs. 6,299",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Chiffon",
+color:"Color: Rust"
+},
+
+316:{
+image:"../images/lawn15.jpg",
+name:"Summer Lawn Frashi Shalwar Collection",
+price:"Rs. 5,799",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"Farshi Shalwar",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Voile",
+color:"Color: Lilac"
+},
+
+317:{
+image:"../images/lawn16.jpg",
+name:"Luxury Lawn Prints",
+price:"Rs. 6,499",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Lemon"
+},
+
+401:{
+image:"../images/sig1.jpg",
+name:"Signature Pret Collection",
+price:"Rs. 7,999",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Premium Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Lavender"
+},
+
+402:{
+image:"../images/sig2.jpg",
+name:"Luxury Signature Pret",
+price:"Rs. 8,499",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Premium Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Silk Blend",
+color:"Color: Maroon"
+},
+
+403:{
+image:"../images/sig3.jpg",
+name:"Premium Pret Wear",
+price:"Rs. 7,299",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Chiffon",
+color:"Color: Mint Green"
+},
+
+404:{
+image:"../images/sig4.jpg",
+name:"Signature Pret Collection",
+price:"Rs. 8,999",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Premium Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Lilac"
+},
+
+405:{
+image:"../images/sig5.jpg",
+name:"Luxury Pret Wear",
+price:"Rs. 7,799",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Silk Blend",
+color:"Color: Lemon"
+},
+
+406:{
+image:"../images/sig6.jpg",
+name:"Premium Signature Pret",
+price:"Rs. 9,299",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Premium Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Emerald Green"
+},
+
+407:{
+image:"../images/sig7.jpg",
+name:"Designer Pret Collection",
+price:"Rs. 8,199",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Chiffon",
+color:"Color: Pistachio"
+},
+
+408:{
+image:"../images/sig8.jpg",
+name:"Luxury Signature Wear",
+price:"Rs. 7,599",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Silk Blend",
+color:"Color: Mustard"
+},
+
+409:{
+image:"../images/sig10.jpg",
+name:"Signature Pret Collection",
+price:"Rs. 11,000",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Premium Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Navy Blue"
+},
+
+410:{
+image:"../images/pexels-dhanno-20516287.jpg",
+name:"Premium Pret Wear",
+price:"Rs. 7,999",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Chiffon",
+color:"Color: Light Purple"
+},
+
+411:{
+image:"../images/pexels-dhanno-28213800.jpg",
+name:"Luxury Signature Pret",
+price:"Rs. 8,799",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Premium Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Carrot Red"
+},
+
+412:{
+image:"../images/pexels-dhanno-33300904.jpg",
+name:"Designer Pret Collection",
+price:"Rs. 9,499",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Premium Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Silk Blend",
+color:"Color: Gray"
+},
+
+413:{
+image:"../images/pexels-dhanno-33667895.jpg",
+name:"Premium Signature Wear",
+price:"Rs. 7,699",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Chiffon",
+color:"Color: Blue"
+},
+
+414:{
+image:"../images/pexels-dhanno-35340667.jpg",
+name:"Luxury Pret Wear",
+price:"Rs. 8,999",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Premium Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Blush Pink"
+},
+
+415:{
+image:"../images/pexels-dhanno-36104983.jpg",
+name:"Signature Pret Collection",
+price:"Rs. 7,899",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Silk Blend",
+color:"Color: Beige"
+},
+
+416:{
+image:"../images/sig9.jpg",
+name:"Premium Pret Wear",
+price:"Rs. 8,299",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Premium Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Pink"
+},
+
+417:{
+image:"../images/pexels-dhanno-36325842.jpg",
+name:"Luxury Signature Pret",
+price:"Rs. 9,199",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Premium Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Chiffon",
+color:"Color: Ice-Blue"
+},
+
+418:{
+image:"../images/pexels-dhanno-36325957.jpg",
+name:"Designer Pret Collection",
+price:"Rs. 8,599",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Lawn",
+dupatta:"1 PC Printed Dupatta",
+dupattaFabric:"Fabric: Organza",
+color:"Color: Lilac"
+},
+
+501:{
+image:"../images/silk1.jpg",
+name:"Luxury Silk Collection",
+price:"Rs. 9,999",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Silk",
+dupatta:"1 PC Silk Dupatta",
+dupattaFabric:"Fabric: Pure Silk",
+color:"Color: Off-White"
+},
+
+502:{
+image:"../images/silk2.jpg",
+name:"Premium Silk Pret",
+price:"Rs. 8,499",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Silk",
+dupatta:"1 PC Silk Dupatta",
+dupattaFabric:"Fabric: Silk Blend",
+color:"Color: Beige Dust"
+},
+
+503:{
+image:"../images/silk3.jpg",
+name:"Designer Silk Wear",
+price:"Rs. 10,299",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Silk",
+dupatta:"1 PC Silk Dupatta",
+dupattaFabric:"Fabric: Pure Silk",
+color:"Color: Lilac"
+},
+
+504:{
+image:"../images/silk4.jpg",
+name:"Luxury Silk Collection",
+price:"Rs. 9,799",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Silk",
+dupatta:"1 PC Silk Dupatta",
+dupattaFabric:"Fabric: Organza Silk",
+color:"Color: Eerlend Green"
+},
+
+505:{
+image:"../images/silk6.jpg",
+name:"Premium Silk Pret",
+price:"Rs. 8,999",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Silk",
+dupatta:"1 PC Silk Dupatta",
+dupattaFabric:"Fabric: Silk Blend",
+color:"Color: Royal Blue"
+},
+
+506:{
+image:"../images/silk7.jpg",
+name:"Luxury Silk Wear",
+price:"Rs. 10,499",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Silk",
+dupatta:"1 PC Silk Dupatta",
+dupattaFabric:"Fabric: Pure Silk",
+color:"Color: White"
+},
+
+507:{
+image:"../images/silk8.jpg",
+name:"Designer Silk Collection",
+price:"Rs. 9,299",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Silk",
+dupatta:"1 PC Silk Dupatta",
+dupattaFabric:"Fabric: Organza Silk",
+color:"Color: Pink"
+},
+
+508:{
+image:"../images/silk9.jpg",
+name:"Premium Silk Pret",
+price:"Rs. 8,799",
+shirt:"1 PC Embroidered Floral Shirt",
+shirtFabric:"Fabric: Silk",
+dupatta:"1 PC Silk Dupatta",
+dupattaFabric:"Fabric: Silk Blend",
+color:"Color: Creme"
+},
+
+509:{
+image:"../images/silk10.jpg",
+name:"Luxury Silk Wear",
+price:"Rs. 10,999",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Silk",
+dupatta:"1 PC Silk Dupatta",
+dupattaFabric:"Fabric: Pure Silk",
+color:"Color: Wine Red"
+},
+
+510:{
+image:"../images/silk11.jpg",
+name:"Designer Silk Collection",
+price:"Rs. 9,899",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Silk",
+dupatta:"1 PC Silk Dupatta",
+dupattaFabric:"Fabric: Organza Silk",
+color:"Color:Light Green"
+},
+
+511:{
+image:"../images/silk12.jpg",
+name:"Premium Silk Pret",
+price:"Rs. 8,699",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Silk",
+dupatta:"1 PC Silk Dupatta",
+dupattaFabric:"Fabric: Silk Blend",
+color:"Color: White and Black"
+},
+
+512:{
+image:"../images/silk13.jpg",
+name:"Luxury Silk Collection",
+price:"Rs. 10,299",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Silk",
+dupatta:"1 PC Silk Dupatta",
+dupattaFabric:"Fabric: Pure Silk",
+color:"Color: Navy Blue"
+},
+
+513:{
+image:"../images/silk14.jpg",
+name:"Designer Silk Wear",
+price:"Rs. 9,599",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Silk",
+dupatta:"1 PC Silk Dupatta",
+dupattaFabric:"Fabric: Organza Silk",
+color:"Color: Peech"
+},
+
+514:{
+image:"../images/silk15.jpg",
+name:"Premium Silk Pret",
+price:"Rs. 8,999",
+shirt:"1 PC Embroidered Shirt",
+shirtFabric:"Fabric: Silk",
+dupatta:"1 PC Silk Dupatta",
+dupattaFabric:"Fabric: Silk Blend",
+color:"Color: Black"
+},
+601:{
+image:"../images/co1jpg.jpg",
+name:"Premium Co-Ord Set",
+price:"Rs. 5,999",
+shirt:"1 PC Co-Ord Shirt",
+shirtFabric:"Fabric: Silk",
+trouser:"1 PC Matching Trouser",
+color:"Color: Beige"
+},
+
+602:{
+image:"../images/co2.jpg",
+name:"Printed Co-Ord Set",
+price:"Rs. 6,499",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Silk",
+trouser:"1 PC Matching Trouser",
+color:"Color: Beige"
+},
+
+603:{
+image:"../images/co3.jpg",
+name:"Summer Co-Ord Set",
+price:"Rs. 5,799",
+shirt:"1 PC Summer Shirt",
+shirtFabric:"Fabric: Silk",
+trouser:"1 PC Matching Trouser",
+color:"Color: Beige"
+},
+
+604:{
+image:"../images/co4.jpg",
+name:"Luxury Co-Ord Set",
+price:"Rs. 6,999",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Premium Silk",
+trouser:"1 PC Matching Trouser",
+color:"Color: Creme"
+},
+
+605:{
+image:"../images/co5.jpg",
+name:"Premium Co-Ord Set",
+price:"Rs. 6,299",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"1 PC Matching Trouser",
+color:"Color: Ocean Blue"
+},
+
+606:{
+image:"../images/co6.jpg",
+name:"Designer Co-Ord Set",
+price:"Rs. 7,499",
+shirt:"1 PC Designer Shirt",
+shirtFabric:"Fabric: Premium Lawn",
+trouser:"1 PC Matching Trouser",
+color:"Color: Green"
+},
+
+607:{
+image:"../images/co7.jpg",
+name:"Printed Co-Ord Set",
+price:"Rs. 5,499",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"1 PC Matching Trouser",
+color:"Color: Orange"
+},
+
+608:{
+image:"../images/co8.jpg",
+name:"Luxury Co-Ord Set",
+price:"Rs. 6,799",
+shirt:"1 PC Luxury Shirt",
+shirtFabric:"Fabric: Premium Lawn",
+trouser:"1 PC Matching Trouser",
+color:"Color: Brown"
+},
+
+609:{
+image:"../images/co9.jpg",
+name:"Premium Co-Ord Set",
+price:"Rs. 5,900",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"1 PC Matching Trouser",
+color:"Color: Lime"
+},
+
+610:{
+image:"../images/co10.jpg",
+name:"Premium Co-Ord Set",
+price:"Rs. 5,000",
+shirt:"1 PC Casual Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"1 PC Matching Trouser",
+color:"Color: Blue"
+},
+
+611:{
+image:"../images/co11.jpg",
+name:"Premium Co-Ord Set",
+price:"Rs. 6,000",
+shirt:"1 PC Casual Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"1 PC Matching Trouser",
+color:"Color: Beige and Pink"
+},
+
+612:{
+image:"../images/co12.jpg",
+name:"Premium Co-Ord Set",
+price:"Rs. 4,500",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"1 PC Matching Trouser",
+color:"Color: Light Blue"
+},
+
+613:{
+image:"../images/co13.jpg",
+name:"Premium Co-Ord Set",
+price:"Rs. 5,200",
+shirt:"1 PC Casual Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"1 PC Matching Trouser",
+color:"Color: gray"
+},
+
+614:{
+image:"../images/co14.jpg",
+name:"Premium Co-Ord Set",
+price:"Rs. 5,500",
+shirt:"1 PC Casual Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"1 PC Matching Trouser",
+color:"Color: Pistachio"
+},
+
+615:{
+image:"../images/co15.jpg",
+name:"Premium Co-Ord Set",
+price:"Rs. 5,000",
+shirt:"1 PC Printed Shirt",
+shirtFabric:"Fabric: Lawn",
+trouser:"1 PC Matching Trouser",
+color:"Color: Olive Green"
+}
+
+
+};
+
+
+const params = new URLSearchParams(window.location.search);
+const productId = params.get("product");
+
+if(productId >= 1 && productId <= 17){
+    document.title = "Summer Collection";
+}
+else if(productId >= 101 && productId <= 117){
+    document.title = "Embroidered Collection";
+}
+else if(productId >= 201 && productId <= 216){
+    document.title = "Printed Collection";
+}
+else if(productId >= 301 && productId <= 317){
+    document.title = "Lawn Collection";
+}
+else if(productId >= 401 && productId <= 418){
+    document.title = "Signature Collection";
+}
+else if(productId >= 501 && productId <= 515){
+    document.title = "Silk Collection";
+}
+else if(productId >= 601 && productId <= 615){
+    document.title = "Co-Ord Collection";
+}
+
+if(products[productId]){
+
+document.getElementById("productImage").src = products[productId].image;
+document.getElementById("productName").innerText = products[productId].name;
+document.getElementById("productPrice").innerText = products[productId].price;
+
+document.getElementById("shirt").innerText =
+products[productId].shirt || "";
+
+document.getElementById("shirtFabric").innerText =
+products[productId].shirtFabric || "";
+
+document.getElementById("dupatta").innerText =
+products[productId].dupatta || "";
+
+document.getElementById("dupattaFabric").innerText =
+products[productId].dupattaFabric || "";
+
+document.getElementById("color").innerText =
+products[productId].color || "";
+
+// Trouser
+if(document.getElementById("trouser")){
+document.getElementById("trouser").innerText =
+products[productId].trouser || "";
+}
+
+}
+
+let quantity = 1;
+
+function increaseQuantity(){
+
+    quantity++;
+
+    document.getElementById("qty").innerText = quantity;
+
+}
+
+function decreaseQuantity(){
+
+    if(quantity > 1){
+
+        quantity--;
+
+        document.getElementById("qty").innerText = quantity;
+    }
+
+}
+
+function addToCart(){
+
+    let product = {
+        image: document.getElementById("productImage").src,
+        name: document.getElementById("productName").innerText,
+        price: document.getElementById("productPrice").innerText,
+        quantity: quantity
+    };
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    cart.push(product);
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert("Product Added To Cart");
+}
+
+</script>
+</body>
+</html>

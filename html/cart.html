@@ -15,28 +15,121 @@
         }
 
         /* CART CONTENT */
-        .cart-content{
-            text-align: center;
-            padding: 60px 20px;
-        }
+/* CART PAGE */
 
-        .cart-content h1{
-            font-size: 30px;
-        }
+.cart-content{
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
+}
 
-        .btn{
-            background: black;
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            cursor: pointer;
-            margin-top: 15px;
-        }
+.cart-content h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+    letter-spacing:2px;
+}
 
-        .btn:hover{
-            background: limegreen;
-        }
+/* Product Box */
 
+.cart-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px;
+    border:1px solid #ddd;
+    background:#fff;
+}
+
+.cart-left{
+    display:flex;
+    gap:30px;
+    align-items:flex-start;
+}
+
+.cart-left img{
+    width:170px;
+    height:220px;
+    object-fit:cover;
+}
+
+.product-info h3{
+    font-size:26px;
+    margin-bottom:15px;
+}
+
+.product-info p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+/* Quantity */
+
+.quantity{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.quantity button{
+    width:35px;
+    height:35px;
+    border:1px solid #ccc;
+    background:white;
+    cursor:pointer;
+}
+
+.quantity span{
+    font-size:18px;
+}
+
+/* Right Side */
+
+.cart-right{
+    text-align:right;
+}
+
+.cart-right h3{
+    font-size:28px;
+    margin-bottom:100px;
+}
+
+.delete-btn{
+    cursor:pointer;
+    font-size:24px;
+}
+
+/* Subtotal */
+
+.cart-summary{
+    margin-top:50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.cart-summary h2{
+    margin:0;
+    font-size:35px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+}
+
+.btn{
+    background:black;
+    color:white;
+    border:none;
+    padding:15px 40px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.btn:hover{
+    background:#333;
+}
         /* FOOTER */
         .footer{
             background: #eaeaea;
@@ -191,17 +284,133 @@
 <!-- 🔥 NAVBAR END -->
 
 <!-- CART CONTENT -->
+
 <div class="cart-content">
+
     <h2>SHOPPING CART</h2>
-    <h1>Your cart is empty</h1>
 
-    <button class="btn" onclick="window.location.href='index.html'">
-        Continue Shopping
-    </button>
+    <div id="cartItems"></div>
 
-    <h3>Have an account?</h3>
-    <p><a href="../html/form.html">Log in</a> to check out faster.</p>
 </div>
+
+
+</div>
+<script>
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let cartItems = document.getElementById("cartItems");
+
+function displayCart(){
+
+    cartItems.innerHTML = "";
+
+    let subtotal = 0;
+
+    cart.forEach((item,index)=>{
+
+       subtotal += parseInt(item.price.replace(/[^0-9]/g,"")) * (item.quantity || 1);
+
+        cartItems.innerHTML += `
+
+        <div class="cart-item">
+
+            <div class="cart-left">
+
+                <img src="${item.image}" class="cart-img">
+
+                <div class="product-info">
+                    <h3>${item.name}</h3>
+                    <p>Rs. ${item.price}</p>
+
+                    <div class="quantity">
+
+                        <button onclick="decreaseQty(${index})">-</button>
+
+                        <span>${item.quantity || 1}</span>
+
+                        <button onclick="increaseQty(${index})">+</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="cart-right">
+
+               <h3>Rs. ${parseInt(item.price.replace(/[^0-9]/g,"")) * (item.quantity || 1)}</h3>
+
+                <i class="fa-solid fa-trash delete-btn"
+                   onclick="removeItem(${index})"></i>
+
+            </div>
+
+        </div>
+
+        `;
+    });
+
+    cartItems.innerHTML += `
+
+    <div class="cart-summary">
+
+        <h2>Subtotal: Rs. ${subtotal}</h2>
+
+        <div class="buttons">
+
+            <button class="btn"
+            onclick="window.location.href='Noor-e-Libas.html'">
+            Continue Shopping
+            </button>
+
+            <button class="btn"
+onclick="window.location.href='checkout.html'">
+    Checkout
+</button>
+
+        </div>
+
+    </div>
+    `;
+}
+
+function increaseQty(index){
+
+    cart[index].quantity++;
+
+    localStorage.setItem("cart",JSON.stringify(cart));
+
+    displayCart();
+}
+
+function decreaseQty(index){
+
+    if(cart[index].quantity > 1){
+
+        cart[index].quantity--;
+
+        localStorage.setItem("cart",JSON.stringify(cart));
+
+        displayCart();
+    }
+}
+
+
+function removeItem(index){
+
+    cart.splice(index,1);
+
+    localStorage.setItem("cart",JSON.stringify(cart));
+
+    displayCart();
+}
+
+displayCart();
+
+</script>
+
+
 
 <!-- FOOTER -->
 <div class="footer">

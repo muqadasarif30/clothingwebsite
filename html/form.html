@@ -1,99 +1,261 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../css/style2.css">
-        <title>Create new Account</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="registration"></div>
-       <form class="form" id="signupForm">
+<head>
+    <title>Login</title>
+     <link rel="stylesheet" href="../css/style.css">
+     <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+</head>
+<body>
 
-    <h2 class="title">Create new Account</h2>
+<div class="top-bar">
 
-    <div class="input-box">
-        <input type="text" placeholder="Name" required>
+  <div class="left-icons">
+    <i style="color:aliceblue" class="fa-solid fa-phone"></i>
+    <i class="fa-brands fa-whatsapp"></i>
+  </div>
+
+  <marquee> Free delivery for orders above Rs 4999 within Pakistan. </marquee>
+
+  <div class="right-icons">
+    <i class="fa-solid fa-magnifying-glass" onclick="toggleSearch()"></i>
+
+    <a href="../html/cart.html">
+     <i class="fa-solid fa-cart-shopping"></i>
+    </a>
+
+    <a href="../html/form.html">
+      <i class="fa-solid fa-user"></i>
+    </a>
+  </div>
+
+</div>
+
+<div id="searchBox" class="search-box">
+    <input type="text" placeholder="Search products...">
+</div>
+    <a href="../html/Noor-e-Libas.html" style="color:white; text-decoration:none;">
+        <div class="logo-navbar">
+    <img src="../images/WhatsApp Image 2026-04-18 at 1.51.18 AM.jpeg" alt="Noor-e-Libas">
+    </div>
+    </a>
+<header>
+ <ul>
+    <!-- WOMEN -->
+    <li class="women-menu">
+        Women
+        <div class="dropdown">
+            <div class="dropdown-content">
+                <div class="column">
+                    <h3>READY TO WEAR</h3>
+                    <p>Embroidered</p>
+                    <p>Printed</p>
+                    <p>Solids</p>
+                </div>
+
+                <div class="column">
+                    <h3>UNSTITCHED</h3>
+                    <p>Embroidered</p>
+                    <p>Printed</p>
+                    <p>Lawn</p>
+                </div>
+
+                <div class="column">
+                    <h3>CO-ORD SET</h3>
+                    <p>Printed</p>
+                    <p>Embroidered</p>
+                    <p>Solids</p>
+                </div>
+                <div class="column">
+                    <h3>FRAGRANCE</h3>
+                    <p>Perfumes</p>
+                    <p>Body Mist</p>
+                </div>
+                <div class="dropdown-image">
+                    <img src="../images/Women.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </li>
+    <!-- GIRLS -->
+    <li>Girls</li>
+
+    <!-- MEN -->
+    <li class="men-menu">  Men
+        <div class="dropdown2">
+
+            <div class="dropdown-content">
+
+                <div class="column">
+                    <h3>SUITS</h3>
+                    <p>Wash & Wear</p>
+                    <p>Blended</p>
+                    <p>Cotton</p>
+                </div>
+                <div class="column">
+                    <h3>BOTTOMS</h3>
+                    <p>Trousers</p>
+                    <p>Jeans</p>
+                </div>
+
+                <div class="column">
+                    <h3>FRAGRANCES</h3>
+                    <p>Perfumes</p>
+                    <p>Body Spray</p>
+                </div>
+                <div class="dropdown-image">
+                    <img src="../images/Men.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </li>
+    <!-- SALE -->
+    <li class="sale-menu">
+    <span style="color:red;">Sale</span>
+    <div class="sale-dropdown">
+        <img src="../images/Sale.webp" alt="">
     </div>
 
-    <div class="input-box">
-        <input type="email" placeholder="Email" required>
+</li>
+
+</ul>
+    
+</header>
+
+<div class="container">
+    <div class="registration"></div>
+
+    <div class="right-side"></div>
+    <form class="form" id="signupForm">
+
+        <h2 class="title">Create Account</h2>
+<div class="input-box">
+    <i class="fa-solid fa-user"></i>
+    <input type="text" placeholder="Full Name" required>
+</div>
+
+<div class="input-box">
+    <i class="fa-solid fa-envelope"></i>
+    <input type="email" placeholder="Email Address" required>
+</div>
+
+<div class="input-box">
+    <i class="fa-solid fa-phone"></i>
+    <input type="tel" placeholder="Phone Number" required>
+</div>
+
+<div class="input-box">
+    <i class="fa-solid fa-lock"></i>
+    <input type="password" id="password" placeholder="Password" required>
+</div>
+
+<div class="input-box">
+    <i class="fa-solid fa-lock"></i>
+    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+</div>
+
+        <div class="input-box">
+            <select required>
+                <option value="">Select Country</option>
+                <option>Pakistan</option>
+                <option>India</option>
+                <option>UK</option>
+            </select>
+        </div>
+
+        <div class="options">
+            <p>Gender</p>
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+        </div>
+
+        <div class="options">
+            <p>Interests</p>
+            <label><input type="checkbox"> Clothing</label>
+            <label><input type="checkbox"> Fragrances</label>
+        </div>
+
+        <div class="options">
+            <label>
+                <input type="checkbox" required>
+                I agree to Terms & Conditions
+            </label>
+        </div>
+
+        <button type="submit" class="btn">Create Account</button>
+
+        <p class="login">
+            Already have an account?
+            <a href="login.html">Login Here</a>
+        </p>
+
+    </form>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-top">  
+        <div class="footer-column">
+            <h3>CUSTOMER CARE</h3>
+            <p>ORDER TRACKING</p>
+            <p>POLICIES</p>
+            <p>FAQ'S</p>
+            <p>CONTACT US</p>
+        </div>
+        <div class="footer-column">
+            <h3>INFORMATION</h3>
+            <p>ABOUT US</p>
+            <p>CAREERS</p>
+            <p>STORE LOCATOR</p>
+            <p>BLOGS</p>
+        </div>
     </div>
-
-    <div class="input-box">
-        <input type="password" placeholder="Password" required>
+    <div class="footer-middle">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
     </div>
-
-    <div class="input-box">
-        <input type="password" placeholder="Confirm Password" required>
+    <div class="footer-bottom">
+        <p>© 2026, Noor-e-Libas Powered by Shopify</p>
     </div>
-
-    <!-- Gender -->
-    <div class="input-box">
-        <label>Gender:</label><br>
-        <input type="radio" name="gender"> Male
-        <input type="radio" name="gender"> Female
-    </div>
-
-    <!-- Checkbox -->
-    <div class="input-box">
-      <input type="checkbox"> I agree to terms & conditions
-    </div>
-    <div class="input-box">
-    <label>Interests:</label><br>
-    <input type="checkbox" name="interest"> Clothing <br>
-    <input type="checkbox" name="interest"> Fragrances <br>
-</div> 
-    <!-- Dropdown -->
-    <div class="input-box">
-        <select>
-            <option>Select Country</option>
-            <option>Pakistan</option>
-            <option>India</option>
-            <option>UK</option>
-        </select>
-    </div>
-
-   <button type="submit" class="btn">Sign Up</button>
-
-    <p class="login">Have an Account ? <a href="#">Login Here</a></p>
-
-</form>
+</footer>
 <script>
-document.getElementById("signupForm").addEventListener("submit", function(event){
+document.getElementById("signupForm").addEventListener("submit", function(e){
 
-    let name = document.querySelector('input[type="text"]').value;
-    let email = document.querySelector('input[type="email"]').value;
-    let password = document.querySelectorAll('input[type="password"]')[0].value;
-    let confirmPassword = document.querySelectorAll('input[type="password"]')[1].value;
+    e.preventDefault();
 
-    // Name validation
+    let name = document.querySelector('input[type="text"]').value.trim();
+    let email = document.querySelector('input[type="email"]').value.trim();
+    let password = document.getElementById("password").value;
+    let confirmPassword = document.getElementById("confirmPassword").value;
+
     if(name.length < 3){
         alert("Name must be at least 3 characters long");
-        event.preventDefault();
         return;
     }
 
-    // Email validation
-    if(!email.includes("@") || !email.includes(".")){
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if(!emailPattern.test(email)){
         alert("Please enter a valid email address");
-        event.preventDefault();
         return;
     }
 
-    // Password length validation
     if(password.length < 6){
         alert("Password must be at least 6 characters long");
-        event.preventDefault();
         return;
     }
 
-    // Confirm password validation
     if(password !== confirmPassword){
         alert("Passwords do not match");
-        event.preventDefault();
         return;
     }
 
-    alert("Registration Successful!");
+    alert("Account Created Successfully!");
+    window.location.href = "login.html";
 });
 </script>
 </body>
