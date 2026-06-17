@@ -1,26 +1,24 @@
 <?php
+
 include("db.php");
 
-$message = "";
+$fullname = $_POST['fullname'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$city = $_POST['city'];
+$address = $_POST['address'];
+$payment = $_POST['payment'];
 
-if($_SERVER["REQUEST_METHOD"] == "POST"){
+$sql = "INSERT INTO orders
+(fullname,email,phone,city,address,payment_method)
+VALUES
+('$fullname','$email','$phone','$city','$address','$payment')";
 
-    $fullname = $_POST['fullname'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $city = $_POST['city'];
-    $address = $_POST['address'];
-    $payment = $_POST['payment'];
-
-    $sql = "INSERT INTO orders
-    (fullname,email,phone,city,address,payment_method)
-    VALUES
-    ('$fullname','$email','$phone','$city','$address','$payment')";
-
-    if(mysqli_query($conn,$sql)){
-        $message = "Order Placed Successfully!";
-    } else {
-        $message = "Error: " . mysqli_error($conn);
-    }
+if(mysqli_query($conn,$sql)){
+    echo "Order Placed Successfully!";
 }
+else{
+    echo "Error: " . mysqli_error($conn);
+}
+
 ?>
