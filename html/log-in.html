@@ -254,29 +254,28 @@
 
 <div class="container">
 
-    <form class="form" id="loginForm">
+    <form class="form" id="loginForm" action="../php/login.php" method="POST">
 
-        <h2 class="title">Log In</h2>
+    <h2 class="title">Log In</h2>
 
-       <div class="input-box">
-    <i class="fa-solid fa-user"></i>
-    <input type="email" placeholder="Username">
-</div>
+    <div class="input-box">
+        <i class="fa-solid fa-user"></i>
+        <input type="email" name="email" placeholder="Email" required>
+    </div>
 
-        <div class="input-box">
-    <i class="fa-solid fa-lock"></i>
-    <input type="password" placeholder="Password">
-</div>
+    <div class="input-box">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" name="password" placeholder="Password" required>
+    </div>
 
-        <button type="submit" class="btn">Log In</button>
+    <button type="submit" class="btn">Log In</button>
 
-        <p class="login">
-            Don't have an account?
-            <a href="form.html">Create New Account</a>
-        </p>
+    <p class="login">
+        Don't have an account?
+        <a href="form.html">Create New Account</a>
+    </p>
 
-    </form>
-
+</form>
 </div>
 
 <!-- Footer -->

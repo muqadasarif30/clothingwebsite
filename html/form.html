@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
+    <title>Create an account</title>
      <link rel="stylesheet" href="../css/style.css">
      <link rel="stylesheet" href="../css/style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -127,37 +127,42 @@
 <div class="container">
     <div class="registration"></div>
 
-    <div class="right-side"></div>
-    <form class="form" id="signupForm">
+    <div class="right-side">
+
+    </div>
+
+    <form class="form" id="signupForm" action="../php/register.php" method="POST">
 
         <h2 class="title">Create Account</h2>
 <div class="input-box">
     <i class="fa-solid fa-user"></i>
-    <input type="text" placeholder="Full Name" required>
+   <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
 </div>
 
 <div class="input-box">
     <i class="fa-solid fa-envelope"></i>
-    <input type="email" placeholder="Email Address" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+
 </div>
 
 <div class="input-box">
     <i class="fa-solid fa-phone"></i>
-    <input type="tel" placeholder="Phone Number" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
 </div>
 
 <div class="input-box">
     <i class="fa-solid fa-lock"></i>
-    <input type="password" id="password" placeholder="Password" required>
+    <input type="password" name="password" id="password" placeholder="Password" required>
 </div>
 
 <div class="input-box">
     <i class="fa-solid fa-lock"></i>
-    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+    
+<input type="password" name="confirm_password" id="confirmPassword" placeholder="Confirm Password" required>
 </div>
 
         <div class="input-box">
-            <select required>
+            <select name="country" required>
                 <option value="">Select Country</option>
                 <option>Pakistan</option>
                 <option>India</option>
@@ -167,14 +172,16 @@
 
         <div class="options">
             <p>Gender</p>
-            <label><input type="radio" name="gender"> Male</label>
-            <label><input type="radio" name="gender"> Female</label>
+           <label><input type="radio" name="gender" value="Male"> Male</label>
+
+           <label><input type="radio" name="gender" value="Female"> Female</label>
         </div>
 
         <div class="options">
             <p>Interests</p>
-            <label><input type="checkbox"> Clothing</label>
-            <label><input type="checkbox"> Fragrances</label>
+           <label><input type="checkbox" name="interests[]" value="Clothing"> Clothing</label>
+
+          <label><input type="checkbox" name="interests[]" value="Fragrances"> Fragrances</label>
         </div>
 
         <div class="options">
@@ -225,12 +232,13 @@
 <script>
 document.getElementById("signupForm").addEventListener("submit", function(e){
 
-    e.preventDefault();
 
-    let name = document.querySelector('input[type="text"]').value.trim();
+   let name = document.getElementById("fullname").value.trim();
     let email = document.querySelector('input[type="email"]').value.trim();
     let password = document.getElementById("password").value;
     let confirmPassword = document.getElementById("confirmPassword").value;
+    alert(name);
+alert(name.length);
 
     if(name.length < 3){
         alert("Name must be at least 3 characters long");
@@ -255,7 +263,8 @@ document.getElementById("signupForm").addEventListener("submit", function(e){
     }
 
     alert("Account Created Successfully!");
-    window.location.href = "login.html";
+    
+   
 });
 </script>
 </body>
